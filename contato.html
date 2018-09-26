@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>FZS :: CONTATO</title>
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<script type="text/javascript" src="script.js"></script> 
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/contato.js" type="text/javascript"></script>
+        <link  href="css/bootstrap.css" rel="stylesheet" type="text/css" />        
+        <link href="cssgeral.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                 
+                    <nav class="navbar navbar-default navbar-fixed-top">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">Frederico Zanitti</a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                                    <li><a href="apresentacao.html">Apresentação </a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vetorização <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="vetorizacao.html">Desenho</a></li>
+                                            <li><a href="logomarcas.html">Logomarca</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trabalhos<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="academico.html">Acadêmicos</a></li>
+                                            <li><a href="agenda.html">Agendas</a></li>
+                                            <li><a href="diversos.html">Artes Diversas</a></li>
+                                            <li><a href="desenhos.html">Desenhos</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="logocriada.html">Logomarcas</a></li>
+                                            <li><a href="software.html">Softwares</a></li>
+                                            <li><a href="sites.html">Sites</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="active"><a href="contato.html">Contato</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <script src="js/jquery.min.js"></script>
+                    <script src="js/bootstrap.min.js"></script>                 
+                </div>
+            </div>
+            
+                <!-- LOCAL PARA JAVASCRIPT
+                <script type="text/javascript">
+				
+                    //funciona no IE
+                    function mascara(formato, keypress, objeto){
+                        campo = eval(objeto);
+                        if(formato=='telefone'){
+                            separador1 = '(';
+                            separador2 = ')';
+                            separador3 = '-';
+                            conjunto1 = 0;
+                            conjunto2 = 3;
+                            conjunto3 = 8;
+                            if(campo.value.length == conjunto1){
+                                campo.value = campo.value + separador1;
+                            }
+                            if(campo.value.length == conjunto2){
+                                campo.value = campo.value + separador2;
+                            }
+                            if(campo.value.length == conjunto3){
+                                campo.value = campo.value + separador3;
+                            }					
+                        }
+                    }
+				
+                    //funciona no Firefox
+                    function formatTelefone(element, e){
+                        if (e.keyCode != 8){
+                            length = element.value.length;
+                            if (length == 2){
+                                if (element.value.charAt(0)!="(")
+                                    element.value = "(" + element.value + ")";
+                            }
+                            if (length == 3)
+                                if (element.value.charAt(0)=="(")
+                                    element.value += ")";
+                            if (length == 8)
+                                element.value += "-";
+                        }
+                    }
+			
+					
+                    function validar(form){
+                        var nome = form.usuario.value;
+                        var email = form.email.value;
+                        var telefone = form.telefone.value;
+                        var msg = form.mensagem.value;
+					
+                        if(nome == ""){
+                            alert("O preenchmimento do nome e obrigatorio");
+                            form.usuario.focus();
+                            return false;
+                        }			
+                        
+                        if(email == ""){
+                            alert("O preenchmimento do e-mail e obrigatorio");
+                            form.email.focus();
+                            return false;
+                        }
+
+                        if(telefone == ""){
+                            alert("Preencha o campo com telefone.\nFormato (xx)xxxx-xxxx (digitar somente numeros)");
+                            form.telefone.focus();
+                            return false;
+                        }	
+
+                        if(msg == ""){
+                            alert("A mensagem nao pode estar em branco \ndeve conter no minimo 15 caracteres!");
+                            form.mensagem.focus();
+                            return false;
+                        }	                        
+                    }
+				
+                </script>      -->      
+            
+            <div class="row">
+                <div class="col-xs-12 titulo">
+                    CRÍTICAS, ELOGIOS E SUGESTÕES: CONTATE-NOS!
+                    <!-- tipos de col: xs / sm / md / lg -->
+                </div>
+            </div>            
+            <div class="row">         
+                <div class="col-xs-12">
+<!--                    
+                <form onsubmit="return validar(this);" id="contato" name="contatophp" method="post" action="formulario2.php" target="_top">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <div class="campoform">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input placeholder="Nome" class="form-control" type="text" tabindex="1" name="usuario" onkeydown="this.value = this.value.toUpperCase();" size="40" class="corcampos"/>
+                                </div>
+                            </div><br>
+
+                            <div class="campoform">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                    <input placeholder="E-mail" class="form-control" type="text" tabindex="2" name="email" onkeydown="this.value = this.value.toLowerCase();" size="40" class="corcampos"/>
+                                </div>
+                            </div><br>
+
+                            <div class="campoform">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                    <input placeholder="Celular" class="form-control" type="text" tabindex="3" name="celular" onkeydown="formatTelefone(this, event);" onkeypress="mascara('telefone',window.event.keyCode,'document.contatophp.celular');" maxlength="13" size="20" class="corcampos"/>
+                                </div>
+                            </div><br>
+
+                            <div class="campoform">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                    <input placeholder="Telefone" class="form-control" type="text" tabindex="3" name="telefone" onkeydown="formatTelefone(this, event);" onkeypress="mascara('telefone',window.event.keyCode,'document.contatophp.telefone');" maxlength="13" size="20" class="corcampos"/>
+                                </div>
+                            </div><br>
+
+                            <div class="campoform">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                    <textarea placeholder="Mensagem" class="form-control" tabindex="4" name="mensagem" cols="50" rows="8" class="corcampos"></textarea>
+                                </div>
+                            </div><br>
+                        </div>
+                                               
+                    </div>
+
+                    <div class="campoform pull-left">      
+                        // Button
+                        <div class="col-xs-12 form-group">
+                            <button type="submit" id="login" value="Enviar" class="btn btn-warning" >
+                                Enviar <span class="glyphicon glyphicon-send"></span>
+                            </button>
+
+                            <button type="reset" id="login" value="Limpar" class="btn btn-warning" >
+                                Limpar <span class="glyphicon glyphicon-trash"></span>
+                            </button>
+                        </div>
+                    </div>
+                </form>	                    
+                </div> 
+				
+-->				
+						
+            </div><br><br>
+			<div class="col-xs-3 qrcode">
+				<img src="imagens/qrcode.jpg" class="img-responsive center-block img-rounded pull-left" width="220px" title="Dados de Contato" border="0">
+			</div>				
+            <div class="col-xs-9 textocontato pull-left">
+                <legend class="contato">Contato</legend>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                    &nbsp;&nbsp;frederico@zanitti.com.br
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>                    
+                    &nbsp;&nbsp;(31) 2512-0848 / 98449-5660
+                </div>			
+                <div>
+                    <br><br>
+					<font class="textoapre2">
+						Aproxime o seu leitor de QrCode da imagem para inserir<br>os dados de contato em sua agenda telef&ocirc;nica.
+					</font>
+                </div>				
+            </div> 		
+            <div class="row saltorow">
+                <div class="col-xs-12 posdiversos">
+                    <!-- só para dar um espaço depois do último item -->
+                </div>
+            </div>            
+        </div>
+	</body>	
+</html>

@@ -1,0 +1,914 @@
+/* GLOBAIS */ 
+
+*{
+
+margin:0;
+
+padding:0;
+
+}
+
+
+
+html{
+
+width:100%;
+
+height:100%;
+
+}
+
+
+
+ /* CENTRALIZAR */
+
+body {background: url(images/croche_1.jpg);
+
+     text-align:center;
+
+	 width:100%;
+
+	 height:100%;}
+
+
+
+#centro{
+
+	margin: 0 auto;
+
+    width:960px;
+
+	border: 0;
+
+    vertical-align:top;
+
+    position:relative;} 
+
+/* FIM CENTRALIZAR*/ 
+
+
+
+
+
+#fundo{background: white;
+
+	   height: 600px;
+
+	   width: 960px;
+
+	   position: absolute;
+
+	   top: 10px;
+
+	   left: 0px;}
+
+
+
+#fundo2{background: white;
+
+	   height: 1450px;
+
+	   width: 960px;
+
+	   position: absolute;
+
+	   top: 10px;
+
+	   left: 8px;}
+
+	   
+
+	   
+
+#slogan{font-family: verdana;
+
+	  font-size: 10px;
+
+	  color: #999999;
+
+	  position: absolute;
+
+	  top: 530px;
+
+	  left: 30px;
+
+	  text-align: left;
+
+	  line-height: 15px}	
+
+
+
+#fone{font-family: Microsoft Sans Serif;
+
+	  font-size: 35px;
+
+	  font-weight: bolder;
+
+	  color: #999999;
+
+	  position: absolute;
+
+	  top: 533px;
+
+	  left: 656px;
+
+	  text-align: center;}		
+
+
+
+#contato{position: absolute;
+
+	     top: 130px;
+
+	     left: 210px;
+
+		 color: #3A5FCD;
+
+		 font-family: verdana;
+
+		 font-size: 11px;
+
+		 text-align: left}	
+
+		 
+
+#contato2{position: absolute;
+
+	     top: 140px;
+
+	     left: 330px;
+
+		 color: #3A5FCD;
+
+		 font-family: verdana;
+
+		 font-size: 11px;
+
+		 text-align: left}	
+
+		 		 
+
+		 
+
+.fontegenerica{color: #3A5FCD;
+
+		 font-family: verdana;
+
+		 font-size: 9px;
+
+		 text-align: left}
+
+
+
+#posicaofontgen{position: absolute;
+
+		top: 40px;
+
+		left: 310px;
+
+}
+
+
+
+.corcampos{background-color: white;
+
+		   font-family: verdana;
+
+		   font-size: 10px;
+
+		   font-weight: bold;
+
+		   color: #3A5FCD;
+
+		   border: 0px;
+
+		   height: 20px}	
+
+
+
+ .corcampos2{background-color: white;
+
+		   font-family: verdana;
+
+		   font-size: 10px;
+
+		   font-weight: bold;
+
+		   color: #3A5FCD;
+
+		   border: 0px;}
+
+
+
+ .corcampos3{background-color: white;
+
+		   font-family: verdana;
+
+		   font-size: 10px;
+
+		   color: #3A5FCD;
+
+		   border: 0px;
+
+		   width: 50px;
+
+		   height: 20px}
+
+
+
+ .corcampos4{background-color: white;
+
+		   font-family: verdana;
+
+		   font-size: 10px;
+
+		   color: #3A5FCD;
+
+		   border: 0px;
+
+		   width: 100px;
+
+		   height: 20px}		   
+
+
+
+.textbotao{font-family: verdana;
+
+		   font-size: 11px;
+
+		   font-weight: bold;
+
+		   color: #3A5FCD;}	
+
+		   
+
+
+
+ #obrigado{font-family: verdana;
+
+	  font-size: 15px;
+
+	  color: #3A5FCD;
+
+	  position: absolute;
+
+	  top: 300px;
+
+	  left: 300px;
+
+	  text-align: center;
+
+	  line-height: 20px}
+
+	  
+
+ #logoobrigado{position: absolute;
+
+	  top: 210px;
+
+	  left: 405px;}	  
+
+ 
+
+ 
+
+ .textocorpo{
+
+			position: absolute;
+
+			top: 170px;
+
+			left: 80px;
+
+			font-family: verdana;
+
+			font-size: 12px;
+
+			color: #3A5FCD;
+
+			line-height: 20px;
+
+			text-align: justify;
+
+			border: 0px;
+
+			width: 800px;}	
+
+ 
+
+  #rodape{position: absolute;
+
+	  top: 520px;
+
+	  left: 0px;} 
+
+	  
+
+  #logozanitti{position: absolute;
+
+	  top: 528px;
+
+	  left: 487px;}
+
+ 
+
+ 
+
+ #fotogrande{position: absolute;
+
+	  top: 55px;
+
+	  left: 0px;} 
+
+	  
+
+ #logohome{position: absolute;
+
+	  top: 130px;
+
+	  left: 180px;}
+	  
+ #novidades{position: absolute;
+
+	  top: 430px;
+
+	  left: 250px;}	  
+
+	  
+
+ #logopequena{position: absolute;
+
+	  top: 10px;
+
+	  left: 405px;}
+
+	  
+
+#textofotogrande{font-family: verdana;
+
+	  font-size: 10px;
+
+	  color: #3A5FCD;
+
+	  position: absolute;
+
+	  top: 540px;
+
+	  left: 330px;
+
+	  text-align: center;
+
+	  line-height: 15px}
+
+	  
+
+.textoinfo{font-family: arial;
+
+	  font-size: 16px;
+
+	  color: #999999;
+
+	  position: absolute;
+
+	  top: 150px;
+
+	  left: 25px;
+
+	  text-align: left;
+
+	  line-height: 20px}
+
+	  
+
+.dinheiro{font-family: arial;
+
+	  font-size: 20px;
+
+	  font-weight: bolder;
+
+	  color: white;
+
+	  position: absolute;
+
+	  top: 519px;
+
+	  left: 810px;
+
+	  text-align: left;
+
+	  }	 
+
+.detalhe1{position: absolute;
+
+	  left: 25px;
+	  top: 405px}	  
+	  
+.detalhe2{position: absolute;
+
+	  left: 85px;
+	  top: 405px}
+	  
+.anterior{position: absolute;
+
+	  left: 20px;
+	  top: 470px}	  
+
+ 
+
+.esquerda1{position: absolute;
+
+	  left: 40px;}
+
+	  
+
+.esquerda2{position: absolute;
+
+	  left: 260px;}
+
+
+
+.esquerda3{position: absolute;
+
+	  left: 480px;}
+
+
+
+.esquerda4{position: absolute;
+
+	  left: 700px;}	  
+
+	  
+
+.acima1{position: absolute;
+
+	  top: 50px;}	  
+
+ 
+
+.acima2{position: absolute;
+
+	  top: 160px;} 
+
+	  
+
+.acima3{position: absolute;
+
+	  top: 270px;} 	
+
+
+
+.acima4{position: absolute;
+
+	  top: 380px;} 	  
+
+
+
+.acima5{position: absolute;	
+
+	  top: 490px;}
+
+	
+
+.acima6{position: absolute;	
+
+	  top: 610px;}
+
+	
+
+.acima7{position: absolute;	
+
+	  top: 720px;}
+
+	
+
+.acima8{position: absolute;	
+
+	  top: 830px;}
+
+	  
+.acima9{position: absolute;	
+
+	  top: 940px;}
+
+.acima10{position: absolute;	
+
+	  top: 1050px;}
+	  
+	  
+	  
+.acima11{position: absolute;	
+
+	  top: 1160px;}
+	  
+	  
+.acima12{position: absolute;	
+
+	  top: 1270px;}
+
+
+
+
+
+	  
+
+	  
+
+/* ==================================MENU================================= */
+
+
+
+ 
+
+.clearit {
+
+	margin: 0;
+
+	padding: 0;
+
+	height: 0;
+
+	clear: both;
+
+}
+
+
+
+/* BUBBLE PLASTIC HORIZONTAL MENU */
+
+
+
+.bubplastic.horizontal {
+
+	width: 100%;
+
+	height: 27px;
+
+	margin: 0;
+
+	padding: 0;
+
+	background: #000000 url(images/bg-bubplastic.gif) top left repeat-x;
+
+}
+
+.bubplastic.horizontal ul {
+
+	list-style: none;
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+.bubplastic.horizontal ul li {
+
+	float: left;
+
+	margin: 0;
+
+	padding: 0;
+
+	background: transparent url(images/bg-bubplastic-button.gif) top left no-repeat;
+
+}
+
+
+
+.bubplastic.horizontal ul li a {
+
+	display: block;
+
+	height: 27px;
+
+	padding-left: 35px;
+
+	float: left;
+
+	text-transform: uppercase;
+
+	font-family: "Helvetica Neue",helvetica,"microsoft sans serif",arial,sans-serif;
+
+	font-size: 70%;
+
+	color: #FFFFFF;
+
+	text-decoration: none;
+
+}
+
+
+
+.bubplastic.horizontal ul li a span.menu_ar {
+
+	display: block;
+
+	float: left;
+
+	height: 22px;
+
+	padding-top: 5px;
+
+	padding-right: 35px;
+
+	background: transparent url(images/bg-bubplastic-button.gif) top right no-repeat;
+
+	cursor: pointer;
+
+}
+
+/* END BUBBLE PLASTIC HORIZONTAL MENU */
+
+
+
+
+
+
+
+/* BUBBLE PLASTIC VERTICAL MENU */
+
+
+
+.bubplastic.vertical {
+
+	width: 250px;
+
+	margin: 0;
+
+	padding: 0;
+
+	display: block;
+
+}
+
+.bubplastic.vertical ul {
+
+	display: block;
+
+	list-style: none;
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+.bubplastic.vertical ul li {
+
+	display: block;
+
+	float: left;
+
+	width: 100%;
+
+	margin: 0;
+
+	padding: 0;
+
+	background: transparent url(images/bg-bubplastic-button.gif) top left no-repeat;
+
+}
+
+
+
+.bubplastic.vertical ul li a {
+
+	display: block;
+
+	margin: 0;
+
+	width: 100%;
+
+	padding-left: 35px;
+
+	text-transform: uppercase;
+
+	font-family: "Helvetica Neue",helvetica,"microsoft sans serif",arial,sans-serif;
+
+	font-size: 70%;
+
+	color: #FFFFFF;
+
+	text-decoration: none;
+
+	background: transparent url(images/bg-bubplastic-button.gif) top left no-repeat;
+
+}
+
+
+
+.bubplastic.vertical ul li a span.menu_ar {
+
+	display: block;
+
+	margin: 0;
+
+	width: 100%;
+
+	height: 22px;
+
+	padding-top: 5px;
+
+	padding-right: 35px;
+
+	background: transparent url(images/bg-bubplastic-button.gif) top right no-repeat;
+
+	cursor: pointer;
+
+}
+
+/* END BUBBLE PLASTIC VERTICAL MENU */
+
+
+
+
+
+
+
+/* AQUA HOVER */
+
+.bubplastic.aqua ul li a:hover,
+
+.bubplastic.aqua ul li.highlight a {
+
+	background: transparent url(images/bg-bubplastic-h-aqua.gif) top left no-repeat;
+
+}
+
+.bubplastic.aqua ul li a:hover span.menu_ar,
+
+.bubplastic.aqua ul li.highlight a span.menu_ar {
+
+	background: transparent url(images/bg-bubplastic-h-aqua.gif) top right no-repeat;
+
+}
+
+
+
+
+
+/* BLUE HOVER */
+
+.bubplastic.blue ul li a:hover,
+
+.bubplastic.blue ul li.highlight a {
+
+	background: transparent url(images/bg-bubplastic-h-blue.gif) top left no-repeat;
+
+}
+
+.bubplastic.blue ul li a:hover span.menu_ar,
+
+.bubplastic.blue ul li.highlight a span.menu_ar {
+
+	background: transparent url(images/bg-bubplastic-h-blue.gif) top right no-repeat;
+
+}
+
+
+
+
+
+/* GRAY HOVER */
+
+.bubplastic.gray ul li a:hover,
+
+.bubplastic.gray ul li.highlight a {
+
+	background: transparent url(images/bg-bubplastic-h-gray.gif) top left no-repeat;
+
+}
+
+.bubplastic.gray ul li a:hover span.menu_ar,
+
+.bubplastic.gray ul li.highlight a span.menu_ar {
+
+	background: transparent url(images/bg-bubplastic-h-gray.gif) top right no-repeat;
+
+}
+
+
+
+
+
+/* LIME HOVER */
+
+.bubplastic.lime ul li a:hover,
+
+.bubplastic.lime ul li.highlight a {
+
+	background: transparent url(images/bg-bubplastic-h-lime.gif) top left no-repeat;
+
+}
+
+.bubplastic.lime ul li a:hover span.menu_ar,
+
+.bubplastic.lime ul li.highlight a span.menu_ar {
+
+	background: transparent url(images/bg-bubplastic-h-lime.gif) top right no-repeat;
+
+}
+
+
+
+
+
+/* ORANGE HOVER */
+
+.bubplastic.orange ul li a:hover,
+
+.bubplastic.orange ul li.highlight a {
+
+	background: transparent url(images/bg-bubplastic-h-orange.gif) top left no-repeat;
+
+}
+
+.bubplastic.orange ul li a:hover span.menu_ar,
+
+.bubplastic.orange ul li.highlight a span.menu_ar {
+
+	background: transparent url(images/bg-bubplastic-h-orange.gif) top right no-repeat;
+
+}
+
+
+
+
+
+/* PINK HOVER */
+
+.bubplastic.pink ul li a:hover,
+
+.bubplastic.pink ul li.highlight a {
+
+	background: transparent url(images/bg-bubplastic-h-pink.gif) top left no-repeat;
+
+}
+
+.bubplastic.pink ul li a:hover span.menu_ar,
+
+.bubplastic.pink ul li.highlight a span.menu_ar {
+
+	background: transparent url(images/bg-bubplastic-h-pink.gif) top right no-repeat;
+
+}
+
+
+
+
+
+/* PURPLE HOVER */
+
+.bubplastic.purple ul li a:hover,
+
+.bubplastic.purple ul li.highlight a {
+
+	background: transparent url(images/bg-bubplastic-h-purple.gif) top left no-repeat;
+
+}
+
+.bubplastic.purple ul li a:hover span.menu_ar,
+
+.bubplastic.purple ul li.highlight a span.menu_ar {
+
+	background: transparent url(images/bg-bubplastic-h-purple.gif) top right no-repeat;
+
+}
+
+
+
+
+
+/* RED HOVER */
+
+.bubplastic.red ul li a:hover,
+
+.bubplastic.red ul li.highlight a {
+
+	background: transparent url(images/bg-bubplastic-h-red.gif) top left no-repeat;
+
+}
+
+.bubplastic.red ul li a:hover span.menu_ar,
+
+.bubplastic.red ul li.highlight a span.menu_ar {
+
+	background: transparent url(images/bg-bubplastic-h-red.gif) top right no-repeat;
+
+}
+
+
+
+#test li {
+
+	display: block;
+
+	border: solid 1px red;
+
+}
+
+ 
+
+	   
+
+/* ==================================FIM MENU================================= */

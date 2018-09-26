@@ -1,0 +1,690 @@
+/* GLOBAIS */
+
+*{
+margin:0;
+padding:0;
+}
+
+html{
+width:100%;
+height:100%;
+}
+
+	
+
+/* CENTRALIZAR */
+
+body {background: url("imagens/fundo.jpg");
+     text-align:center;
+	 background-attachment: fixed;
+	 width:100%;
+	 height:100%;
+	 overflow-x:hidden;
+	 overflow-y:show;}
+
+
+#centro{
+	margin: 0 auto;
+    width:1024px;
+	border: 0;
+    vertical-align:top;
+    position:relative;}
+
+/* FIM CENTRALIZAR*/
+
+a:link {text-decoration: none; color: black;}
+a:visited {text-decoration: none; color: black;}
+a:active {text-decoration: none; color: black;}
+a:hover {font-size:24; font-weight:bold; color: red;}
+
+
+#fundo{/*background: url("imagens/papel.png");*/
+	   height: 860px;
+	   width: 1024px;
+	   position: absolute;
+	   top: 0px;
+	   left: 0px;
+	   margin: 0 auto;
+	   border: 0;
+	   vertical-align:top;
+	   }
+
+#logoPrinc{position: absolute;
+	   top: 150px;
+	   left: 213px}	
+	   
+#logomenu{position: absolute;
+	   top: 110px;
+	   left: 850px;
+	   z-index: 2}	
+
+
+#menu70{position: absolute;
+	  top: 10px;
+	  left: 18px;
+	  display: block;
+	  font-family: book antiqua;
+	  font-size: 10px;
+	  width: 1024px;
+	  height: 70px;
+	  z-index: 2}
+
+
+#slogan{font-family: book antiqua;
+	  font-size: 10px;
+	  color: #666666;
+	  position: absolute;
+	  top: 520px;
+	  left: 0px;
+	  width: 1024px;
+	  text-align: center;
+	  line-height: 15px}
+	 
+
+#fb{position: absolute;
+		 top: 0px;
+		 left: 0px;
+		 width: 161px;
+		 height: 46px;}	
+
+
+#in{position: absolute;
+		 top: 0px;
+		 left: 90px;
+		 width: 40px;
+		 height: 40px;}
+
+  
+#gp{position: absolute;
+		 top: 0px;
+		 left: 45px;
+		 width: 40px;
+		 height: 40px;} 
+
+.possocial{position: absolute;
+			top: 400px;
+			left: 0px;
+			width: 1024px;
+			height: 45px;
+			display: block;
+			font-family: book antiqua;
+			font-size: 40px;
+			color: #006E94} 
+			
+.logofacecompl{position: absolute;
+			top: 460px;
+			left: 432px;
+			width: 1024px;
+			height: 45px;
+			display: block;
+			font-family: book antiqua;
+			font-size: 40px;
+			color: #006E94} 
+			
+#textos{font-family: book antiqua;
+	  font-size: 16px;
+	  color: #666666;
+	  position: absolute;
+	  top: 200px;
+	  left: 130px;
+	  width: 824px;
+	  text-align: center;
+	  line-height: 25px}			
+			
+.formataTitulo{position: absolute;
+		 top: 130px;
+		 left: 100px;
+		 width: 650px;
+		 color: #006E94;
+		 font-family: book antiqua;
+		 font-size: 30px;
+		 text-align: left;
+		 line-height:25px;}			
+		 
+.formataTexto{position: absolute;
+		 top: 250px;
+		 left: 100px;
+		 width: 700px;
+		 color: #666666;
+		 font-family: book antiqua;
+		 font-size: 21px;
+		 text-align: left;
+		 line-height:35px;}	
+		 
+.formataTextoAS{position: absolute;
+		 top: 250px;
+		 left: 80px;
+		 width: 850px;
+		 color: #666666;
+		 font-family: book antiqua;
+		 font-size: 21px;
+		 text-align: left;
+		 line-height:35px;}
+
+.encapsulamento{float: left;
+		 width: 100px;
+		 height: 60px;
+		 font-family: book antiqua;
+		 color: #006E94;
+		 font-size: 140px;
+         margin: 35px 20px 5px 0px;}
+		 /*Margens: topo - direita - baixo - esquerda*/	
+
+.encapsfotos{width: 350px;
+		 height: 290px;
+         margin: 15px 20px 5px 0px;}
+		 /*Margens: topo - direita - baixo - esquerda*/	
+		 
+.especial{width: 100%;
+         margin: 25px 20px 5px 0px;}
+		 /*Margens: topo - direita - baixo - esquerda*/	
+		 
+.legenda{position: relative;
+		 top: 5px;
+		 left: 0px;
+		 width: 100%;
+		 color: #006E94;
+		 font-family: verdana;
+		 font-size: 11px;
+		 text-align: left;
+		 line-height:18px;
+		 font-weight:bold;}		 
+		 
+.numvalores{float: left;
+		 font-family: book antiqua;
+		 color: #F89F3A;
+		 font-size: 60px;
+         margin: 0px 10px 0px 00px;}
+		 /*Margens: topo - direita - baixo - esquerda*/		 
+
+.quadro{position: absolute;
+	    top: 90px;
+		left: 40px;
+		width: 420px;
+		height: 350px;
+		border: 10px;
+		border-color: white;
+		z-index: 1;
+		font-family: verdana;
+		font-size: 12px;
+		text-align: left;
+		font-weight: bold;
+		text-indent: 10px;
+		color: black;}	
+
+.mapa{position: absolute;
+	  top: 100px;
+	  left: 480px;
+	  z-index: 0;}
+
+.textocontato{position: absolute;
+			  top: 530px;
+			  left: 480px;
+			  width: 550px;
+			  height: 30px;
+			  color: black;		
+			  font-family: verdana;
+			  font-size: 11px;
+			  text-align: center}	  
+		
+.qrcode{position: absolute;
+	   top: 400px;
+	   left: 270px;}
+	   
+.facebook{position: absolute;
+	   top: 445px;
+	   left: 40px;}
+
+#thankyou{font-family: book antiqua;
+	  font-size: 25px;
+	  color: black;
+	  position: absolute;
+	  top: 380px;
+	  left: 0px;
+	  width: 100%;
+	  text-align: center;
+	  font-weight: bolder;
+	  line-height: 35px}	
+
+.leitorqrcode{position: absolute;
+			  top: 505px;
+			  left: 40px;
+			  width: 220px;
+			  height: 40px;
+			  color: black;		
+			  font-family: verdana;
+			  font-size: 10px;
+			  text-align: right}	  
+
+/* =================== MENU ============================ */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu #menu-button {
+  display: none;
+}
+#cssmenu {
+  width: auto;
+  border-radius: 5px;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  background: #3db2e1;
+  background: -o-linear-gradient(top, #69c4e8, #21a1d4);
+  background: -ms-linear-gradient(top, #69c4e8, #21a1d4);
+  background: -webkit-linear-gradient(top, #69c4e8, #21a1d4);
+  background: -moz-linear-gradient(top, #69c4e8, #21a1d4);
+  background: linear-gradient(to bottom, #69c4e8, #21a1d4);
+  box-shadow: inset 0 -3px 0 #1f97c7, inset 0 -3px 3px #1f9acc, inset 0 2px 2px #9ad7ef, inset 1px 0 2px #22a4d9, inset -1px 0 2px #22a4d9, 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06), 0 3px 3px rgba(0, 0, 0, 0.17), 2px 1px 2px rgba(0, 0, 0, 0.05), -2px 1px 2px rgba(0, 0, 0, 0.05);
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center ul ul {
+  text-align: left;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu.align-right ul ul {
+  text-align: right;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu > ul > li > a {
+  padding: 20px 25px;
+  font-size: 13px;
+  color: #ffffff;
+  /*text-transform: uppercase;*/
+  letter-spacing: 1px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover,
+#cssmenu > ul > li.active > a {
+  color: #cae5fd;
+}
+#cssmenu > ul > li.has-sub > a {
+  padding-right: 40px;
+}
+#cssmenu ul > li.has-sub > a:after {
+  content: '';
+  position: absolute;
+  right: 5px;
+  top: 17.5px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  background: #3db2e1;
+  background: -webkit-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  background: -ms-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  background: -moz-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  background: -o-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  background: linear-gradient(to bottom, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  box-shadow: inset 0 -1px 1px #209ed0, inset 0 2px 1px #7fcceb;
+  background-size: 36px 36px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+#cssmenu ul > li.has-sub:hover > a:after {
+  background-position: 0 -18px;
+}
+#cssmenu ul > li.has-sub > a:before {
+  content: '';
+  position: absolute;
+  right: 11px;
+  top: 25.5px;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 3px solid transparent;
+  border-top-color: #ffffff;
+  z-index: 99;
+}
+#cssmenu ul > li.has-sub:hover > a:before {
+  border-top-color: #19799f;
+}
+#cssmenu ul ul {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  -webkit-transition: top .2s ease, opacity .2s ease;
+  -moz-transition: top .2s ease, opacity .2s ease;
+  -ms-transition: top .2s ease, opacity .2s ease;
+  -o-transition: top .2s ease, opacity .2s ease;
+  transition: top .2s ease, opacity .2s ease;
+}
+#cssmenu > ul > li > ul {
+  top: 91px;
+  padding-top: 8px;
+  border-radius: 5px;
+}
+#cssmenu > ul > li:hover > ul {
+  left: auto;
+  top: 51px;
+  opacity: 1;
+}
+#cssmenu.align-right > ul > li:hover > ul {
+  right: 0;
+}
+#cssmenu ul ul ul {
+  top: 40px;
+}
+#cssmenu ul ul > li:hover > ul {
+  top: 0;
+  left: 178px;
+  padding-left: 10px;
+  opacity: 1;
+}
+#cssmenu.align-right ul ul > li:hover > ul {
+  left: auto;
+  right: 178px;
+  padding-left: 0;
+  padding-right: 10px;
+  opacity: 1;
+}
+#cssmenu ul ul li a {
+  width: 180px;
+  padding: 12px 25px;
+  font-size: 13px;
+  font-weight: 700;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  text-decoration: none;
+  background: #3db2e1; 													/* background do SUBMENU*/
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+#cssmenu ul ul li:hover > a,
+#cssmenu ul ul li > a:hover,
+#cssmenu ul ul li.active > a {
+  color: #cae5fd;
+}
+#cssmenu ul ul li:first-child > a {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: inset 0 2px 2px #88d0ed;
+}
+#cssmenu ul ul li:last-child > a {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: inset 0 -3px 0 #27a9de, inset 0 -3px 3px #1f9acc, 0 1px 1px rgba(0, 0, 0, 0.03), 0 2px 2px rgba(0, 0, 0, 0.05), 0 2px 3px rgba(0, 0, 0, 0.13);
+}
+#cssmenu ul ul > li.has-sub > a:after {
+  right: 12px;
+  top: 9.5px;
+  background: #3db2e1;
+  background: -webkit-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  background: -ms-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  background: -moz-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  background: -o-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  background: linear-gradient(to bottom, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  box-shadow: inset 0 -1px 1px #209ed0, inset 0 2px 1px #7fcceb;
+  background-size: 36px 36px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+#cssmenu.align-right ul ul > li.has-sub > a:after {
+  right: auto;
+  left: 12px;
+}
+#cssmenu ul ul > li.has-sub:hover > a:after {
+  background-position: 0 -18px;
+}
+#cssmenu ul ul > li.has-sub > a:before {
+  top: 15.5px;
+  right: 16px;
+  border-top-color: transparent;
+  border-left-color: #ffffff;
+}
+#cssmenu.align-right ul ul > li.has-sub > a:before {
+  top: 15.5px;
+  right: auto;
+  left: 16px;
+  border-top-color: transparent;
+  border-right-color: #ffffff;
+  border-left-color: transparent;
+}
+#cssmenu ul ul > li.has-sub:hover > a:before {
+  border-top-color: transparent;
+  border-left-color: #1c89b5;
+}
+#cssmenu.align-right ul ul > li.has-sub:hover > a:before {
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: #1c89b5;
+}
+@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  #cssmenu {
+    width: 100%;
+  }
+  #cssmenu ul,
+  #cssmenu ul ul,
+  #cssmenu ul ul ul,
+  #cssmenu > ul,
+  #cssmenu.align-center > ul,
+  #cssmenu > ul > li > ul,
+  #cssmenu > ul > li:hover > ul,
+  #cssmenu ul ul li:hover > ul,
+  #cssmenu ul ul ul li:hover > ul,
+  #cssmenu.align-right ul ul,
+  #cssmenu.align-right ul ul li:hover > ul,
+  #cssmenu.align-right ul ul ul li:hover > ul {
+    position: relative;
+    left: 0;
+    right: auto;
+    top: 0;
+    width: 100%;
+    display: none;
+    padding: 0;
+    opacity: 1;
+    text-align: left;
+  }
+  #cssmenu ul li {
+    width: 100%;
+    border-top: 1px solid rgba(120, 120, 120, 0.2);
+  }
+  #cssmenu > ul > li > a,
+  #cssmenu ul ul li a,
+  #cssmenu ul ul li:first-child > a,
+  #cssmenu ul ul li:last-child > a {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+  }
+  #cssmenu ul li a {
+    padding-left: 12.5px;
+  }
+  #cssmenu ul ul li a {
+    padding: 14px 25px 14px 27.5px;
+  }
+  #cssmenu ul ul ul li a {
+    padding-left: 42.5px;
+  }
+  #cssmenu ul ul ul ul li a {
+    padding-left: 57.5px;
+  }
+  #cssmenu > ul > li.has-sub > a:after,
+  #cssmenu > ul > li.has-sub > a:before,
+  #cssmenu ul ul li.has-sub > a:after,
+  #cssmenu ul ul li.has-sub > a:before {
+    display: none;
+  }
+  #cssmenu #menu-button {
+    position: relative;
+    display: block;
+    padding: 20px;
+    padding-left: 12.5px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #ffffff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  #cssmenu .submenu-button {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 53px;
+    height: 53px;
+    border-left: 1px solid rgba(120, 120, 120, 0.2);
+    z-index: 10;
+    cursor: pointer;
+  }
+  #cssmenu ul ul .submenu-button {
+    height: 41px;
+  }
+  #cssmenu ul .submenu-button:after,
+  #cssmenu #menu-button:after {
+    content: '';
+    position: absolute;
+    right: 12.5px;
+    top: 12.5px;
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 15px;
+    background: #3db2e1;
+    background: -webkit-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+    background: -ms-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+    background: -moz-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+    background: -o-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+    background: linear-gradient(to bottom, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+    box-shadow: inset 0 -1px 1px #209ed0, inset 0 2px 1px #7fcceb;
+    background-size: 56px 56px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+  }
+  #cssmenu ul .submenu-button.submenu-opened:after,
+  #cssmenu #menu-button.menu-opened:after {
+    background-position: 0 -28px;
+  }
+  #cssmenu ul ul .submenu-button:after {
+    top: 6.5px;
+  }
+  #cssmenu #menu-button:before,
+  #cssmenu .submenu-button:before {
+    content: '';
+    position: absolute;
+    right: 22.5px;
+    top: 25.5px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    z-index: 99;
+  }
+  #cssmenu ul ul .submenu-button:before {
+    top: 19.5px;
+  }
+  #cssmenu #menu-button.menu-opened:before,
+  #cssmenu .submenu-button.submenu-opened:before {
+    border-top-color: #19799f;
+  }
+}
+
+/* ================= FIM MENU ========================== */	
+
+
+	
+	
+/* ===================================== LIGHTBOX ================================================= */
+
+#lightbox{
+	background-color:#CCCC99;
+	padding: 10px;
+	border-bottom: 2px solid #666;
+	border-right: 2px solid #666;
+	/* formatação da fonte da legenda */
+	font-family: book antiqua;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #663300;
+	}
+#lightboxDetails{
+	font-size: 0.8em;
+	padding-top: 0.4em;
+	}	
+#lightboxCaption{ float: left; }
+#keyboardMsg{ float: right; }
+#closeButton{ top: 5px; right: 5px; }
+
+#lightbox img{ border: none; clear: both;} 
+#overlay img{ border: none; }
+
+#overlay{ background-image: url(imagens/overlay.png); }
+
+* html #overlay{
+	background-color: #333;
+	background-color: transparent;
+	background-image: url(blank.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="overlay.png", sizingMethod="scale");
+	}
+	
+.galeria{
+	position: absolute;
+	top: 130px;
+	left: 0px;
+    height: 350px;
+    width: 800px;
+	font-family: book antiqua;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: #666600;
+}	
+
+/* =============================== FIM DO LIGHTBOX ================================================ */

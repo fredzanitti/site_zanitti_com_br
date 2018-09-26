@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+    <head>
+        <title>VICAF HYDRO :: Projetos e Consultoria</title>
+		<link rel="stylesheet"
+		 href="cssgeral.css"
+		 type="text/css">
+		<script type="text/javascript" src="lightbox.js"></script>
+		<script type="text/javascript" src="script.js"></script> 
+		<script type="text/javascript">qm_create(0,true,200,250,false,false,false,false,false);</script>	
+		
+        <meta name="name" content="vicaf hydro">
+        <meta name="author" content="vicaf hydro">
+        <meta name="description" content="VICAF HYDRO Projetos e Consultoria">
+        <meta name="keywords" content="vicaf, hydro, consultoria, projetos, projeto, cristóv&atilde;o, cristovao, ferreira, belo, horizonte, mg, minas gerais">
+    </head>
+    <body>
+        <div id="centro">
+            <div id="fundo1">
+
+                <div id="menugeral">
+                    <div id='cssmenu'>
+                        <ul>
+                            <li class='active '><a href='index.html'><span>Home</span></a></li>
+                            <li class='has-sub '><a href='#'><span>Empresa</span></a>
+                                <ul>
+                                    <li><a href='historia.html'><span>Hist&oacute;ria</span></a></li>
+                                    <li><a href='missao.html'><span>Miss&atilde;o e Vis&atilde;o</span></a></li>
+                                    <li><a href='valores.html'><span>Valores</span></a></li>
+                                </ul>
+                            </li>
+						   <li><a href='#'><span>Trabalhos</span></a>
+							  <ul>
+								 <li><a href='servicos.html'><span>Servi&ccedil;os Oferecidos</span></a></li>
+								 <li><a href='cases.html'><span>Cases de Sucesso</span></a></li>
+							  </ul>					   
+						   </li>
+						    <li><a href='#'><span>Equipe</span></a>
+							    <ul>
+									<li><a href='resp.html'><span>Respons&aacute;vel T&eacute;cnico</span></a></li>
+									<li><a href='equipe.html'><span>Apoio</span></a></li>
+							    </ul>					   
+						    </li>
+                            <li><a href='visita.html'><span>Solicite uma visita</span></a></li>
+                            <li><a href='clientes.html'><span>Clientes</span></a></li>
+                            <li><a href='contato.html'><span>Contato</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="logopq">
+                    <img src="imagens/logo.jpg">
+                </div>
+				
+                <div class="contvisit">
+                    SOLICITE UMA VISITA
+                </div>				
+
+
+                <!-- LOCAL PARA JAVASCRIPT-->
+                <script type="text/javascript">
+				
+                    //funciona no IE
+                    function mascara(formato, keypress, objeto){
+                        campo = eval(objeto);
+                        if(formato=='telefone'){
+                            separador1 = '(';
+                            separador2 = ')';
+                            separador3 = '-';
+                            conjunto1 = 0;
+                            conjunto2 = 3;
+                            conjunto3 = 8;
+                            if(campo.value.length == conjunto1){
+                                campo.value = campo.value + separador1;
+                            }
+                            if(campo.value.length == conjunto2){
+                                campo.value = campo.value + separador2;
+                            }
+                            if(campo.value.length == conjunto3){
+                                campo.value = campo.value + separador3;
+                            }					
+                        }
+                    }
+				
+                    //funciona no Firefox
+                    function formatTelefone(element, e){
+                        if (e.keyCode != 8){
+                            length = element.value.length;
+                            if (length == 2){
+                                if (element.value.charAt(0)!="(")
+                                    element.value = "(" + element.value + ")";
+                            }
+                            if (length == 3)
+                                if (element.value.charAt(0)=="(")
+                                    element.value += ")";
+                            if (length == 8)
+                                element.value += "-";
+                        }
+                    }
+			
+					
+                    function validar(form){
+                        var empresa = form.empresa.value;
+                        var nome = form.nome.value;
+                        var email = form.email.value;
+                        var telefone = form.tel.value;
+                        var msg = form.mensagem.value;
+					
+                        if(empresa == ""){
+                            alert("O preenchmimento do nome da empresa &eacute; obrigatório");
+                            form.empresa.focus();
+                            return false;
+                        }	
+						
+                        if(nome == ""){
+                            alert("O preenchmimento do nome do contato &eacute; obrigatório");
+                            form.nome.focus();
+                            return false;
+                        }
+												
+                        if(telefone == ""){
+                            alert("Preencha o campo com telefone.\nFormato (xx)xxxx-xxxx (digitar só números)");
+                            form.tel.focus();
+                            return false;
+                        }	
+
+                        if(msg == ""){
+                            alert("A mensagem n&atilde;o pode estar em branco \ndeve conter no mínimo 15 caracteres!");
+                            form.mensagem.focus();
+                            return false;
+                        }	
+					
+                    }
+				
+                </script>
+
+                <div class="posformulario">
+
+                    <form onsubmit="return validar(this);" id="contato" name="visitaphp" method="post" action="formulariovisita.php" target="_top">
+                        Empresa*&nbsp;
+                        <input type="text" name="empresa" onkeydown="this.value = this.value.toUpperCase();" size="41" class="corcampos"/>&nbsp;&nbsp;&nbsp;<br><br>
+                        Contato*&nbsp;
+						<input type="text" name="nome" onkeydown="this.value = this.value.toUpperCase();" size="41" class="corcampos"/>&nbsp;&nbsp;&nbsp;<br><br>
+                        Cidade&nbsp;
+                        <input type="text" name="cidade" onkeydown="this.value = this.value.toUpperCase();" size="40" class="corcampos"/>&nbsp;&nbsp;&nbsp;<br><br>
+                        E-mail&nbsp;
+                        <input type="text" name="email" onkeydown="this.value = this.value.toLowerCase();" size="77" class="corcampos"/>&nbsp;&nbsp;&nbsp;<br><br>
+                        Telefone*&nbsp;
+                        <input type="text" name="tel" onkeydown="formatTelefone(this, event);" onkeypress="mascara('telefone',window.event.keyCode,'document.contatophp.tel');" maxlength="13" size="30" class="corcampos"/>&nbsp;&nbsp;&nbsp;
+                        Celular&nbsp;
+                        <input type="text" name="cel" onkeydown="formatTelefone(this, event);" onkeypress="mascara('telefone',window.event.keyCode,'document.contatophp.cel');" maxlength="13" size="30" class="corcampos"/>&nbsp;<br><br>					
+						Motivo da visita&nbsp;
+                        <input type="text" name="motivo" onkeydown="this.value = this.value.toUpperCase();" size="68" class="corcampos"/>&nbsp;&nbsp;&nbsp;<br><br>
+                        Mensagem*&nbsp;<br><br>
+                        <textarea name="mensagem" cols="85" rows="5" class="corcampos2"></textarea><br><br>
+
+                        <input type="submit" value="Enviar" class="textbotao"/>
+                        <input type="reset" value="Limpar" class="textbotao"/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <font class="fontegenerica">
+                            Os campos com * s&atilde;o de preenchimento obrigat&oacute;rio.
+                        </font>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>	
+    </body>
+</html>

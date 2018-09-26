@@ -1,0 +1,46 @@
+<html>
+
+
+	<head>
+		<title>ARTES DA TIA NORMA</title>
+		<link rel="stylesheet"
+		 href="cssgeral.css"
+		 type="text/css">
+	</head>
+
+
+	<body>
+	<div id="centro">
+		<div id="fundo2">
+				<div id="mensagem">
+					<?php
+						$nome = $_POST['usuario'];
+						$cidade = $_POST['cidade'];
+						$email = $_POST['email'];
+						$tel = $_POST['tel'];
+						$cel = $_POST['cel'];
+						$mensagem = nl2br($_POST['mensagem']);
+
+						$msg = "<font face='Verdana' size='1'><b>Nome:</b> \t$nome</font><br>";
+						$msg .= "<font face='Verdana' size='1'><b>Cidade:</b> \t$cidade</font><br>";
+						$msg .= "<font face='Verdana' size='1'><b>E-mail:</b> \t$email</font><br>";
+						$msg .= "<font face='Verdana' size='1'><b>Telefone:</b> \t$tel</font><br>";
+						$msg .= "<font face='Verdana' size='1'><b>Celular:</b> \t$cel</font><br><br>";
+						$msg .= "<font face='Verdana' size='1'><b>Mensagem:</b><br> \t$mensagem</font>";
+
+						$mensagem = "$msg";
+						$remetente = "$email";
+						$destinatario = "atendimento@artesdatianorma.com.br";
+						$assunto = "CONTATO SITE - ARTES DA TIA NORMA";
+						$headers = "From: ".$remetente."\nContent-type: text/html"; # o 'text/html' é o tipo mime da mensagem
+						if(!mail($destinatario,$assunto,$mensagem,$headers)){
+							print "falha no envio da mensagem";
+						} else {
+							echo "<script>window.location.href='obrigado.html'</script>";
+						}
+					?>				
+				</div>				
+		</div>
+	</div>	
+	</body>
+</html>

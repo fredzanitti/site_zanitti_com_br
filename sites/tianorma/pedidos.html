@@ -1,0 +1,181 @@
+<html>
+
+	<head>
+
+		<title>ARTES DA TIA NORMA :: Pedidos</title>
+
+		<link rel="stylesheet"
+
+		 href="cssgeral.css"
+
+		 type="text/css">		 
+
+		<meta name="name" content="ARTES DA TIA NORMA">
+
+		<meta name="author" content="ARTES DA TIA NORMA">
+
+		<meta name="description" content="ARTES DA TIA NORMA">
+
+		<meta name="keywords" content="portfolio, norma, tia, arte, artes, cachecol, colete, enfeites, enfeite, natal, cozinha, porta, gola, fuxico, html, css, tapetes, tapete, flanela, caminho, mesa, móbiles, bijouteria, artes, artesanato">
+
+	</head>
+
+	<body>
+
+
+
+	<div id="centro">
+
+		<div id="fundo2">
+
+			<div class="erroie_l">
+				<img src="images/erroie.jpg">
+			</div>
+			
+			<div class="erroie_r">
+				<img src="images/erroie.jpg">
+			</div>
+			
+			<div id="menu">
+		
+<div class="nav-container-outer">
+   <img src="images/nav-bg-l.jpg" alt="" class="float-left" />
+   <img src="images/nav-bg-r.jpg" alt="" class="float-right" />
+   <ul id="nav-container" class="nav-container">
+      <li><a class="item-primary" href="index.html" target="_self">Home</a>
+	   </li>
+       <li><span class="divider divider-vert" ></span></li>
+      <li><a class="item-primary" href="produtos.html" target="_self">Produtos</a>
+	   </li>
+       <li><span class="divider divider-vert" ></span></li>
+      <li><a class="item-primary" href="quemsou.html" target="_self">Quem sou</a>
+	   </li>
+       <li><span class="divider divider-vert" ></span></li>
+      <li><a class="item-primary" href="pedidos.html" target="_self">Pedidos</a>
+	   </li>
+       <li><span class="divider divider-vert" ></span></li>
+      <li><a class="item-primary" href="contato.html" target="_self">Contato</a>
+	   </li>
+       <li><span class="divider divider-vert" ></span></li>
+      <li class="clear"> </li>
+   </ul>
+</div>
+			</div>
+
+			<!-- LOCAL PARA JAVASCRIPT-->
+			<script language="JavaScript">
+					
+				function validarped(form){
+					var nomeped = form.nomeped.value;
+					var telefoneped = form.telefoneped.value;
+					var msgpedido = form.msgpedido.value;
+					
+					if(nomeped == ""){
+						alert("O preenchmimento do nome é obrigatório");
+						form.nomeped.focus();
+						return false;
+					}
+
+					if((telefoneped == "") || telefoneped.length < 13){
+						alert("Preencha o campo com telefone.\nFormato (xx)xxxx-xxxx (digitar só números)");
+						form.telefoneped.focus();
+						return false;
+					}	
+
+					if(msgpedido == ""){
+						alert("A mensagem não pode estar em branco \ndeve conter no mínimo 15 caracteres!");
+						form.msgpedido.focus();
+						return false;
+					}
+					
+				}
+				
+				//funciona no IE
+				function mascara(formato, keypress, objeto){
+					campo = eval(objeto);
+					if(formato=='telefone'){
+						separador1 = '(';
+						separador2 = ')';
+						separador3 = '-';
+						conjunto1 = 0;
+						conjunto2 = 3;
+						conjunto3 = 8;
+						if(campo.value.length == conjunto1){
+							campo.value = campo.value + separador1;
+						}
+						if(campo.value.length == conjunto2){
+							campo.value = campo.value + separador2;
+						}
+						if(campo.value.length == conjunto3){
+							campo.value = campo.value + separador3;
+						}					
+					}
+				}
+				
+				//funciona no Firefox
+				function formatTelefone(element, e){
+					if (e.keyCode != 8){
+							length = element.value.length;
+						if (length == 2){
+						if (element.value.charAt(0)!="(")
+							element.value = "(" + element.value + ")";
+						}
+						if (length == 3)
+						if (element.value.charAt(0)=="(")
+							element.value += ")";
+						if (length == 8)
+							element.value += "-";
+					}
+				}
+
+			</script>			
+			
+			<form onsubmit="return validarped(this);" id="contato2" name="pedidophp" method="post" action="formularioped.php" target="_top">
+				Nome*&nbsp;
+				<input type="text" name="nomeped" onkeydown="this.value = this.value.toUpperCase();" size="35" class="corcampos"/>&nbsp;&nbsp;&nbsp;
+				Cidade&nbsp;
+				<input type="text" name="cidadeped" onkeydown="this.value = this.value.toUpperCase();" size="35" class="corcampos"/>&nbsp;&nbsp;&nbsp;<br><br>
+				E-mail&nbsp;
+				<input type="text" name="emailped" onkeydown="this.value = this.value.toLowerCase();" size="80" class="corcampos"/>&nbsp;&nbsp;&nbsp;<br><br>
+				Telefone*&nbsp;
+				<input type="text" name="telefoneped" onkeydown="formatTelefone(this, event);" onkeypress="mascara('telefone',window.event.keyCode,'document.pedidophp.telefoneped');" maxlength="13" size="30" class="corcampos"/>&nbsp;&nbsp;&nbsp;
+				Celular&nbsp;
+				<input type="text" name="celularped" onkeydown="formatTelefone(this, event);" onkeypress="mascara('telefone',window.event.keyCode,'document.pedidophp.celularped');" maxlength="13" size="30" class="corcampos"/>&nbsp;<br><br><br>
+				Mensagem*&nbsp;<br>
+				<font class="fontegenerica">
+				(Informe a quantidade e o c&oacute;digo do produto desejado)
+				</font><br><br>
+				<textarea name="msgpedido" cols="85" rows="8" class="corcampos2"></textarea><br><br>
+				<input type="submit" id="login" value="Enviar" class="textbotao"/>
+				<input type="reset" id="login" value="Limpar" class="textbotao"/>
+			</form>			
+			
+			
+			<div class="fundoc1"><img src="images/fundos/pedido_01.jpg"></div>
+			<div class="fundoc2"><img src="images/fundos/pedido_02.jpg"></div>
+			<div class="fundoc3"><img src="images/fundos/pedido_03.jpg"></div>
+			<div class="fundoc4"><img src="images/fundos/pedido_04.jpg"></div>
+			
+
+			<div id="textcont2">
+				<font class="fontegenerica3">
+					<font class="fontegenerica2">CONSIDERA&Ccedil;&Otilde;ES<br><br></font>
+					<b>:: Envio</b><br>
+					Enviamos para todo o Brasil.
+					Despesas de envio por conta do comprador.<br> Valor único de R$ 10,00 para qualquer CEP (exceto SEDEX 10).<br>
+					<b>:: Formas de Pagamento</b><br>
+					Depósito bancário (Banco Ita&uacute;) ou pagamento &agrave; vista (caso resida em Arcos/MG).<br>
+					<b>:: Prazos</b><br>
+					Prazo para confec&ccedil;&atilde;o das pe&ccedil;as e entrega: a combinar.<br>
+					:: Aceitamos encomendas para quantidades maiores. As cores podem ser ao seu gosto.<br>
+					Novas ideias ser&atilde;o bem vindas (utilize o formul&aacute;rio de contato para sugest&otilde;es)!
+				</font>
+			</div>
+				
+		</div>
+
+	</div>
+
+	</body>
+
+</html>

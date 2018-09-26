@@ -1,0 +1,241 @@
+<html>
+
+	<head>
+
+		<title>ARTE COM BARBANTE :: Pedidos</title>
+
+		<link rel="stylesheet"
+
+		 href="cssgeral.css"
+
+		 type="text/css">		 
+
+		<meta name="name" content="ARTE COM BARBANTE">
+
+		<meta name="author" content="ARTE COM BARBANTE">
+
+		<meta name="description" content="ARTE COM BARBANTE">
+
+		<meta name="keywords" content="portfolio, maria, graca, zanitti, arte, barbante, html, css, tapetes, tapete, flanela, caminho, mesa, forro, pano">
+
+	</head>
+
+	<body>
+
+
+
+	<div id="centro">
+
+		<div id="fundo">
+
+				
+
+			<div class="menu bubplastic horizontal blue">
+
+				<ul>
+
+					<li><span class="menu_r"><a href="index.html" target="_self"><span class="menu_ar">Home</span></a></span></li>
+
+					<li><span class="menu_r"><a href="produtos.html" target="_self"><span class="menu_ar">Produtos</span></a></span></li>
+
+					<li class="highlight"><span class="menu_r"><a href="pedidos.html" target="_self"><span class="menu_ar">Pedidos</span></a></span></li>
+
+					<li><span class="menu_r"><a href="historia.html" target="_self"><span class="menu_ar">Hist&oacute;ria do Croch&ecirc;</span></a></span></li>
+
+					<li><span class="menu_r"><a href="contato.html" target="_self"><span class="menu_ar">Contato</span></a></span></li>
+
+				</ul>
+
+				<br class="clearit" />
+
+			</div>			
+
+			
+
+			<!-- LOCAL PARA JAVASCRIPT-->
+
+			<script language="JavaScript">
+
+					
+
+				function validarped(form){
+
+					var nomeped = form.nomeped.value;
+
+					var telefoneped = form.telefoneped.value;
+
+					var msgpedido = form.msgpedido.value;
+
+					
+
+					if(nomeped == ""){
+
+						alert("O preenchmimento do nome é obrigatório");
+
+						form.nomeped.focus();
+
+						return false;
+
+					}
+
+
+
+					if((telefoneped == "") || telefoneped.length < 13){
+
+						alert("Preencha o campo com telefone.\nFormato (xx)xxxx-xxxx (digitar só números)");
+
+						form.telefoneped.focus();
+
+						return false;
+
+					}	
+
+
+
+					if(msgpedido == ""){
+
+						alert("O campo pedido deve conter pelo menos um item");
+
+						form.msgpedido.focus();
+
+						return false;
+
+					}
+
+					
+
+				}
+
+				
+
+				//funciona no IE
+
+				function mascara(formato, keypress, objeto){
+
+					campo = eval(objeto);
+
+					if(formato=='telefone'){
+
+						separador1 = '(';
+
+						separador2 = ')';
+
+						separador3 = '-';
+
+						conjunto1 = 0;
+
+						conjunto2 = 3;
+
+						conjunto3 = 8;
+
+						if(campo.value.length == conjunto1){
+
+							campo.value = campo.value + separador1;
+
+						}
+
+						if(campo.value.length == conjunto2){
+
+							campo.value = campo.value + separador2;
+
+						}
+
+						if(campo.value.length == conjunto3){
+
+							campo.value = campo.value + separador3;
+
+						}					
+
+					}
+
+				}
+
+				
+
+				//funciona no Firefox
+
+				function formatTelefone(element, e){
+
+					if (e.keyCode != 8){
+
+							length = element.value.length;
+
+						if (length == 2){
+
+						if (element.value.charAt(0)!="(")
+
+							element.value = "(" + element.value + ")";
+
+						}
+
+						if (length == 3)
+
+						if (element.value.charAt(0)=="(")
+
+							element.value += ")";
+
+						if (length == 8)
+
+							element.value += "-";
+
+					}
+
+				}
+
+
+
+			</script>			
+
+			
+
+			<form onsubmit="return validarped(this);" id="contato2" name="pedidophp" method="post" action="formularioped.php" target="_top">
+
+				Nome*&nbsp;
+
+				<input type="text" name="nomeped" onkeydown="this.value = this.value.toUpperCase();" size="35" class="corcampos"/>&nbsp;&nbsp;&nbsp;
+
+				Cidade&nbsp;
+
+				<input type="text" name="cidadeped" onkeydown="this.value = this.value.toUpperCase();" size="35" class="corcampos"/>&nbsp;&nbsp;&nbsp;<br><br>
+
+				E-mail&nbsp;
+
+				<input type="text" name="emailped" onkeydown="this.value = this.value.toLowerCase();" size="80" class="corcampos"/>&nbsp;&nbsp;&nbsp;<br><br>
+
+				Telefone*&nbsp;
+
+				<input type="text" name="telefoneped" onkeydown="formatTelefone(this, event);" onkeypress="mascara('telefone',window.event.keyCode,'document.pedidophp.telefoneped');" maxlength="13" size="30" class="corcampos"/>&nbsp;&nbsp;&nbsp;
+
+				Celular&nbsp;
+
+				<input type="text" name="celularped" onkeydown="formatTelefone(this, event);" onkeypress="mascara('telefone',window.event.keyCode,'document.pedidophp.celularped');" maxlength="13" size="30" class="corcampos"/>&nbsp;<br><br>					
+
+				Pedido*&nbsp;<br>
+
+				<font class="fontegenerica">
+
+				(Informe a quantidade e o c&oacute;digo do tapete desejado)
+
+				</font><br><br>
+
+				<textarea name="msgpedido" cols="85" rows="5" class="corcampos2"></textarea><br><br>
+
+				<input type="submit" id="login" value="Enviar" class="textbotao"/>
+
+				<input type="reset" id="login" value="Limpar" class="textbotao"/>
+
+			</form>	
+
+
+
+			<img src="images/fundopedido.jpg">
+
+			
+
+		</div>
+
+	</div>	
+
+	</body>
+
+</html>

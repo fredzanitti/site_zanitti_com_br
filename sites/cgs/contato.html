@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+	<head>
+		<title>CGS :: CONTATO</title>
+		<link rel="stylesheet"
+		 href="cssgeral.css"
+		 type="text/css">
+		<script type="text/javascript" src="script.js"></script>
+		<meta name="name" content="CGS">
+		<meta name="author" content="CGS">
+		<meta name="description" content="CGS Engenharia de Constru&ccedil;&otilde;es e Montagens">
+		<meta name="keywords" content="cgs, engenharia, construcao, construcoes, montagem, montagens, mario, campos, caldeiraria, silo, estruturas, solda">
+		
+<!-- LOCAL PARA JAVASCRIPT-->
+                <script type="text/javascript">
+				
+                    //funciona no IE
+                    function mascara(formato, keypress, objeto){
+                        campo = eval(objeto);
+                        if(formato=='telefone'){
+                            separador1 = '(';
+                            separador2 = ')';
+                            separador3 = '-';
+                            conjunto1 = 0;
+                            conjunto2 = 3;
+                            conjunto3 = 8;
+                            if(campo.value.length == conjunto1){
+                                campo.value = campo.value + separador1;
+                            }
+                            if(campo.value.length == conjunto2){
+                                campo.value = campo.value + separador2;
+                            }
+                            if(campo.value.length == conjunto3){
+                                campo.value = campo.value + separador3;
+                            }					
+                        }
+                    }
+				
+                    //funciona no Firefox
+                    function formatTelefone(element, e){
+                        if (e.keyCode != 8){
+                            length = element.value.length;
+                            if (length == 2){
+                                if (element.value.charAt(0)!="(")
+                                    element.value = "(" + element.value + ")";
+                            }
+                            if (length == 3)
+                                if (element.value.charAt(0)=="(")
+                                    element.value += ")";
+                            if (length == 8)
+                                element.value += "-";
+                        }
+                    }
+			
+					
+                    function validar(form){
+                        var nome = form.usuario.value;
+                        var telefone = form.telefone.value;
+                        var msg = form.mensagem.value;
+					
+                        if(nome == ""){
+                            alert("O preenchmimento do nome e obrigatorio");
+                            form.usuario.focus();
+                            return false;
+                        }
+
+                        if(telefone == ""){
+                            alert("Preencha o campo com telefone.\nFormato (xx)xxxx-xxxx (digitar somente numeros)");
+                            form.telefone.focus();
+                            return false;
+                        }	
+
+                        if(msg == ""){
+                            alert("A mensagem nao pode estar em branco \ndeve conter no minimo 15 caracteres!");
+                            form.mensagem.focus();
+                            return false;
+                        }	
+					
+                    }
+				
+                </script>
+
+                    <script type="text/javascript">
+                        var menu=new menu.dd("menu");
+                        menu.init("menu","menuhover");
+                    </script>				
+		
+		
+	</head>
+	<body>
+	<div id="centro">
+		<div id="fundo">
+		
+				<div id="logocgs">
+					<img src="imagens/logo.png">
+				</div>
+		
+				<div id="menu70">
+					<div id='cssmenu'>
+					<ul>
+					   <li><a href='index.html'><span>Home</span></a></li>
+					   <li class='has-sub'><a href='#'><span>Apresenta&ccedil;&atilde;o</span></a>
+						  <ul>
+							 <li><a href='empresa.html'><span>A Empresa</span></a></li>
+							 <li><a href='visao.html'><span>Vis&atilde;o</span></a></li>
+							 <li class='last'><a href='missao.html'><span>Miss&atilde;o</span></a></li>
+						  </ul>
+					   </li>
+					   <li class='has-sub'><a href='#'><span>Infraestrutura</span></a>
+						  <ul>
+							 <li><a href='equipamento.html'><span>Equipamentos</span></a></li>
+							 <li class='last'><a href='qualidade.html'><span>Qualidade</span></a></li>
+						  </ul>
+					   </li>
+					   <li><a href='servicos.html'><span>Servi&ccedil;os Realizados</span></a></li>
+					   <li><a href='clientes.html'><span>Clientes</span></a></li>
+					   <li class='last'><a href='contato.html'><span>Contato</span></a></li>
+					</ul>
+					</div>
+				</div>
+				
+				<div id="fundogeral" style="background: url(imagens/fundosombracontato.png);">
+					
+					<div class="textocontato">
+
+						Rua Geraldino Ferreira Gomes, 191 - Jardim Primavera <br>
+						M&aacute;rio Campos/MG - CEP 32470-000<br>
+						(31) 9854-7074 (Gabriel Ferreira) / 9724-2897 (Sevanir Isaias) / 9630-0410 (Cosme Pereira) - cgsmontagens@bol.com.br
+
+					</div>
+					
+					<div class="mapa">
+						<a href="https://maps.google.com/maps?q=R.+Geraldino+Gomes,+191+-+M%C3%A1rio+Campos+-+Minas+Gerais,+32470-000,+Brasil&hl=pt-PT&ie=UTF8&ll=-20.054289,-44.182302&spn=0.005473,0.010568&geocode=FU79zf4dj9Nd_Q&hnear=R.+Geraldino+Gomes,+191+-+M%C3%A1rio+Campos+-+Minas+Gerais,+32470-000,+Brasil&t=m&z=17" target="_blank"><img src="imagens/mapa.png" alt="Ir para o Google Maps" title="Clique para ir ao Google Maps" border="0"></a>
+					</div>
+
+
+						<div class="quadro">
+
+							<form onsubmit="return validar(this);" id="contato" name="contatophp" method="post" action="formulario2.php" target="_top">
+								
+								<br>Nome*&nbsp;
+								<input type="text" tabindex="1" name="usuario" onkeydown="this.value = this.value.toUpperCase();" size="60" class="corcampos"/>&nbsp;&nbsp;&nbsp;<br><br>
+								E-mail&nbsp;&nbsp;
+								<input type="text" tabindex="2" name="email" onkeydown="this.value = this.value.toLowerCase();" size="60" class="corcampos"/>&nbsp;&nbsp;&nbsp;<br><br>
+								Telefone*&nbsp;
+								<input type="text" tabindex="3" name="telefone" onkeydown="formatTelefone(this, event);" onkeypress="mascara('telefone',window.event.keyCode,'document.contatophp.telefone');" maxlength="13" size="21" class="corcampos"/>&nbsp;&nbsp;&nbsp;
+								Celular&nbsp;
+								<input type="text" tabindex="4" name="celular" onkeydown="formatTelefone(this, event);" onkeypress="mascara('telefone',window.event.keyCode,'document.contatophp.celular');" maxlength="13" size="21" class="corcampos"/>&nbsp;<br><br>					
+								Mensagem*&nbsp;<br><br>
+								<textarea tabindex="5" name="mensagem" cols="69" rows="8" class="corcampos"></textarea><br><br>
+								<input type="submit" tabindex="6" id="login" value="Enviar" class="textbotao"/>
+								<input type="reset" tabindex="7" id="login" value="Limpar" class="textbotao"/>
+							</form>	
+
+						</div>
+					
+					</div>
+					
+				<div id="slogan">
+					&copy;2013 Frederico Zanitti -  - Todos os direitos reservados<br>
+					[ melhor visualizado em 1024 x 768 pixels ou superior ]
+				</div>
+				
+				<div id="logozanitti">
+					<a href="http://www.zanitti.com.br" target="_blank"><img src="imagens/zanitti.png" alt="Design by Frederico Zanitti" title="Design by Frederico Zanitti" border="0"></a>
+					</a>
+				</div>
+				
+		</div>
+	</div>	
+	</body>
+</html>

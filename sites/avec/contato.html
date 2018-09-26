@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+	<head>
+		<title>AVEC :: Contato</title>
+		<link rel="stylesheet"
+		 href="cssavec.css"
+		 type="text/css">
+		<script type="text/javascript" src="lightbox.js"></script>	
+		<script type="text/javascript" src="script.js"></script> 
+		<script type="text/javascript">qm_create(0,true,200,250,false,false,false,false,false);</script>
+		<meta name="name" content="AVEC">
+		<meta name="author" content="AVEC">
+		<meta name="description" content="Associa&ccedil;&atilde;o Efig&ecirc;nia Vidigal de Educa&ccedil;&atilde;o e Cultura">
+		<meta name="keywords" content="portfolio, avec, efigenia, associacao, cultura, cultural, vidigal, educacao, escola, crianaca, aprender, aprendizado, ensino">
+	</head>
+	<body>
+
+        <div id="centro">
+            <div id="fundo">
+
+                <!-- LOCAL PARA JAVASCRIPT-->
+                <script type="text/javascript">
+				
+                    //funciona no IE
+                    function mascara(formato, keypress, objeto){
+                        campo = eval(objeto);
+                        if(formato=='telefone'){
+                            separador1 = '(';
+                            separador2 = ')';
+                            separador3 = '-';
+                            conjunto1 = 0;
+                            conjunto2 = 3;
+							
+							if(campo.value.length == conjunto1){
+                                campo.value = campo.value + separador1;
+                            }
+                            if(campo.value.length == conjunto2){
+                                campo.value = campo.value + separador2;
+                            }			
+                        }
+                    }
+				
+                    //funciona no Firefox
+                    function formatTelefone(element, e){
+                        if (e.keyCode != 8){
+                            length = element.value.length;
+                            if (length == 2){
+                                if (element.value.charAt(0)!="(")
+                                    element.value = "(" + element.value + ")";
+                            }
+                            if (length == 3)
+                                if (element.value.charAt(0)=="(")
+                                    element.value += ")";
+                        }
+                    }
+			
+					
+                    function validar(form){
+                        var nome = form.usuario.value;
+						var email = form.email.value;
+                        var telefone = form.telefone.value;
+                        var msg = form.mensagem.value;
+					
+                        if(nome == ""){
+                            alert("O preenchmimento do nome e obrigatorio");
+                            form.usuario.focus();
+                            return false;
+                        }
+						
+						if(email == ""){
+                            alert("O preenchimento do email é obrigatório");
+                            form.email.focus();
+                            return false;
+                        }						
+						
+                        if(telefone == ""){
+                            alert("Preencha o campo com telefone.\nFormato (xx)xxxx-xxxx (digitar somente numeros)");
+                            form.telefone.focus();
+                            return false;
+                        }
+
+                        if(msg == ""){
+                            alert("A mensagem nao pode estar em branco \ndeve conter no minimo 15 caracteres!");
+                            form.mensagem.focus();
+                            return false;
+                        }	
+					
+                    }
+				
+                </script>
+
+				<div id="menu70">
+				
+					<div id='cssmenu'>
+					<ul>
+					  <li><a href='index.html'>Home</a></li>
+					  <li><a href='#'>A Institui&ccedil;&atilde;o</a>
+						 <ul>
+							 <li><a href='identidade.html'>Identidade</a></li>
+							 <li><a href='denominacao.html'>Denomina&ccedil;&atilde;o</a></li>
+							 <li><a href='missao.html'>Miss&atilde;o</a></li>
+							 <li><a href='visao.html'>Vis&atilde;o</a></li>
+							 <li><a href='valores.html'>Valores</a></li>
+						 </ul>
+					  </li>
+					  <li><a href='#'>Modelos</a>
+						 <ul>
+							 <li><a href='reconhecimentos.html'>Reconhecimento P&uacute;blico</a></li>
+							 <li><a href='gestao.html'>Gest&atilde;o</a></li>
+							 <li><a href='recursos.html'>Obten&ccedil;&atilde;o de Recursos</a></li>
+						 </ul>					  
+					  </li>
+					  <li><a href='acaosocial.html'>A&ccedil;&atilde;o Social</a></li>
+					  <li><a href='#'>Quem Somos</a></li>
+					  <li class='active'><a href='contato.html'>Contato</a></li>
+					</ul>
+					</div>	
+				</div>				
+
+				<div class="quadro">
+					<br>Cr&iacute;ticas, elogios, sugest&otilde;es:
+
+					<form onsubmit="return validar(this);" id="contato" name="contatophp" method="post" action="formulario.php" target="_top">
+						
+						<br>Nome*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" tabindex="1" name="usuario" onkeydown="this.value = this.value.toUpperCase();" size="40" class="corcampos"/>&nbsp;&nbsp;&nbsp;<br><br>
+						E-mail*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" tabindex="2" name="email" onkeydown="this.value = this.value.toLowerCase();" size="40" class="corcampos"/>&nbsp;&nbsp;&nbsp;<br><br>
+						Telefone*&nbsp;
+						<input type="text" tabindex="3" name="telefone" onkeydown="formatTelefone(this, event);" onkeypress="mascara('telefone',window.event.keyCode,'document.contatophp.telefone');" maxlength="12" size="20" class="corcampos"/>&nbsp;&nbsp;&nbsp;<br><br>
+						Celular&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" tabindex="3" name="celular" onkeydown="formatTelefone(this, event);" onkeypress="mascara('telefone',window.event.keyCode,'document.contatophp.celular');" maxlength="13" size="20" class="corcampos"/>&nbsp;<br><br>					
+						Mensagem*&nbsp;<br><br>
+						<textarea tabindex="4" name="mensagem" cols="50" rows="6" class="corcampos"></textarea><br><br>
+						<input type="submit" tabindex="5" id="login" value="   Enviar   " class="textbotao"/>
+						<input type="reset" tabindex="6" id="login" value="   Limpar   " class="textbotao"/>
+					</form>	
+
+				</div>
+				<div class="mapa">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.6634905603387!2d-43.943013249541096!3d-19.938580529107934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699d7d81e422f%3A0x422fc10f6329b281!2sAv.+do+Contorno%2C+7069+-+Santo+Ant%C3%B4nio%2C+Belo+Horizonte+-+MG%2C+30110-017!5e0!3m2!1spt-BR!2sbr!4v1451136313666" width="550" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="textocontato">
+					<b>E-mail geral</b>: avecmg@avecmg.org.br  -  <b>Telefone</b>: (31) 2512-0903 - Sala 212<br>
+					<b>Presidente</b>: Maria Jos&eacute; Vidigal - mariajose@avecmg.org.br
+				</div>		
+				
+				<div class="qrcode">
+					<img src="imagens/qrcode.jpg" width="150px" height="150px" title="Dados de Contato" border="0">
+				</div>
+				
+				<div class="leitorqrcode">
+					Utilize um leitor de QRCode em seu smartphone para adicionar o contato da AVEC em sua agenda!
+				</div>
+				
+				<div class="facebook">
+					<!-- POSICIONAMENTO ICONE FACEBOOK -->
+					<div id="fb">
+						<a href="https://www.facebook.com/avecmg" title="Conhe&ccedil;a nossa p&aacute;gina no Facebook" target="_blank">
+							<img src="imagens/icons/f_semcor.jpg"
+							onMouseOver="this.src='imagens/icons/f_cor.jpg'"  
+							onMouseOut="this.src='imagens/icons/f_semcor.jpg'" 
+							border="0">
+						</a>
+					</div>	
+				</div>		
+			</div>
+        </div>
+
+    </body>	
+
+</html>

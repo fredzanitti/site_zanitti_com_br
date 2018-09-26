@@ -1,0 +1,713 @@
+/* GLOBAIS */
+
+*{
+margin:0;
+padding:0;
+}
+
+html{
+width:100%;
+height:100%;
+}
+
+a {     
+display: inline-block;     
+position: relative;    
+z-index: 1;
+}
+
+/* CENTRALIZAR */
+
+body {background: url("imagens/fundo.jpg");
+     text-align:center;
+	 background-attachment: fixed;
+	 width:100%;
+	 height:100%;}
+
+
+#centro{
+	margin: 0 auto;
+    width:800px;
+	border: 0;
+    vertical-align:top;
+    position:relative;}
+
+/* FIM CENTRALIZAR*/
+
+a:link {text-decoration: none; color: black;}
+a:visited {text-decoration: none; color: black;}
+a:active {text-decoration: none; color: black;}
+a:hover {font-size:24; font-weight:bold; color: red;}
+
+
+#fundo{/*background: url("imagens/papel.png");*/
+	   height: 650px;
+	   width: 800px;
+	   position: absolute;
+	   top: 0px;
+	   left: 0px
+	   }
+
+.campoform{position: relative;
+        top: 100px;}
+
+.logo2{position: relative;
+	   top: 200px;
+	   left: 0px;
+	   text-align: center;}	
+
+.qrcode{position: relative;
+	   top: 100px;}	    
+   
+
+#flash{background: black;
+	   height: 530px; 
+	   width: 800px;
+	   position: absolute;
+	   top: 70px;
+	   left: 0px}
+   
+
+#downcopa{position: absolute;
+	   top: 140px;
+	   left: 500px}	  
+   
+.legenda{position: relative;
+	   top: 80px;
+	   font-family: verdana;
+	   font-size: 9px;}	  
+   
+#fontpequena2{position: absolute;
+	   top: 595px;
+	   left: 54px;
+	   font-family: verdana;
+	   font-size: 9px;}	  
+   
+#desmenu{position: absolute;
+	   top: 70px;
+	   left: 20px;
+	   font-family: verdana;
+	   font-size: 10px;}
+	   
+
+#menuagenda1{position: absolute;
+
+	   top: 90px;
+
+	   left: 0px}
+
+.voltar{position: absolute;
+	   top: 63px;
+	   left: 80px;
+	   height: 40px;
+	   width: 40px}	   
+	   
+
+.tuto{position: absolute;
+	   top: 480px;
+	   left: 200px}
+
+.fotoperfil{position: relative;
+	   top: 5px;
+	   left: 10px}	   
+
+.down{position: absolute;
+	   top: 480px;
+	   left: 460px}	
+   
+
+.down2{position: absolute;
+	   top: 360px;
+	   width: 800px;
+	   }	   
+
+   
+
+.down3{position: absolute;
+	   top: 390px;
+	   width: 800px;
+	   }	   
+
+	   
+
+#menuagenda2{position: absolute;
+	   top: 150px;
+	   left: 0px}	   
+   
+
+#menuagenda3{position: absolute;
+	   top: 210px;
+	   left: 0px}	   
+
+#menu70{position: absolute;
+	  top: 10px;
+	  left: 18px;
+	  display: block;
+	  font-family: verdana;
+	  font-size: 10px;
+	  width: 800px;
+	  height: 70px;
+	  z-index: 1}
+  
+.posrow{position: absolute;
+	   top: 80px;}
+
+.slogan{font-family: verdana;
+	  font-size: 10px;
+	  color: #666666;
+	  position: relative;
+	  top: 330px;
+	  text-align: center;
+	  line-height: 15px}	
+
+
+
+
+.thankyou{font-family: verdana;
+	  font-size: 16px;
+	  color: black;
+      top: 250px;
+	  text-align: center;
+	  font-weight: bolder;
+	  line-height: 25px}
+
+
+#mensagem{font-family: verdana;
+	  font-size: 16px;
+	  color: white;
+	  position: absolute;
+	  top: 450px;
+	  left: 240px;
+	  text-align: center;
+	  line-height: 15px}	  
+
+
+
+#logo{position: absolute;
+	  top: 10px;
+	  left: 620px}	  
+
+	  
+
+#btnvoltar{position: absolute;
+
+		   top: 480px;
+
+		   left: 370px}		  
+
+	  
+
+#webmail{position: absolute;
+
+	     top: 490px;
+
+	     left: 220px;
+
+		 color: white;
+
+		 font-family: verdana;
+
+		 font-size: 11px}	
+
+
+
+.figuramail{position: absolute;
+
+			top: 482px;
+
+			left: 110px}		 
+
+
+
+.formattexto{position: absolute;
+		top: 90px;
+		left: 60px;
+		width: 700px;
+		text-align: left;
+		line-height: 20px}
+
+			   
+.textoapre1{  font-family: verdana;
+			  font-size: 13px;
+			  color: black;
+			  font-weight: bolder;}
+
+.textoapre2{  font-family: verdana;
+			  font-size: 13px;
+			  color: #7A7A7A;}
+
+		
+
+.foto{position: absolute;
+		top: 150px;
+		left: 100px}			
+		 
+#possites{position: absolute;
+		 top: 60px;
+		 left: 80px;
+		 width: 816px;
+		 height: 516px;
+		 z-index: 1}			
+		 
+#desenhos{position: absolute;
+		 top: 90px;
+		 left: 0px;
+		 width: 816px;
+		 height: 516px;
+		 z-index: 1}
+		 
+#agendas{position: absolute;
+		 top: 100px;
+		 left: 55px;
+		 width: 700px;
+		 height: 490px;
+		 z-index: 1}
+		 
+#diversos{position: absolute;
+		 top: 100px;
+		 left: 100px;
+		 width: 604px;
+		 height: 550px;
+		 z-index: 1}		 
+
+.textodiversos{position: absolute;
+		 top: 50px;
+		 left: 20px;
+		 width: 755px;
+		 color: gray;		
+		 font-family: verdana;
+		 font-size: 12px;
+		 text-align: center;
+		 line-height: 20px;
+		 font-weight: bolder;
+		 }	
+		 
+.textorodape{position: relative;
+		 top: 80px;
+		 color: black;		
+		 font-family: verdana;
+		 font-size: 11px;
+		 }
+
+.textosoftware{position: relative;
+		 top: 80px;
+		 color: dimgrey;		
+		 font-family: verdana;
+		 font-size: 14px;
+		 line-height: 25px;
+		 }
+
+	 
+		 
+.imgsoft{float: left;
+         margin: 0px 20px 10px 0px}
+		 /*Margens: topo - esquerda - baixo - direita*/
+
+.formattextsoft{position: absolute;
+		 top: 70px;
+		 left: 220px;
+		 width: 550px;
+		 font-family: verdana;
+		 font-size: 11px;
+		 text-align: left;
+		 line-height:150%}		 
+
+		 
+.download{position: relative;
+		 top: 100px; align-content: center;
+		 z-index: 1}		 
+
+.iconnextagenda{position: absolute;
+		 top: 80px;
+		 width: 100%;
+		 text-align: center;
+		 z-index: 1}		 
+
+.iconnext{position: relative;
+		 top: 250px;
+		 z-index: 1}
+		 
+.iconprev{position: relative;
+		 top: 250px;
+		 z-index: 1}	
+
+.logomarcas{position: relative;
+		 top: 100px;
+		 z-index: 1}
+		 
+.site1{position: absolute;
+      top: 90px;
+	  left: 30px}
+	  
+.site2{position: absolute;
+      top: 90px;
+	  left: 290px}	  	  
+	  
+.site3{position: absolute;
+      top: 90px;
+	  left: 550px}		
+	  
+.site4{position: absolute;
+      top: 280px;
+	  left: 30px}	  
+
+.fontemenu{font-size: 8px;}
+	  
+
+.textoexp1{position: relative;
+			  top: 120px;
+			  color: black;		
+			  font-family: verdana;
+			  font-size: 11px;
+			  text-align: center}
+
+.exp1{position: relative;
+      top: 100px;}
+
+.exp2{position: relative;
+      top: 180px;}
+ 
+.posagenda{position: relative;
+      top: 120px;} 
+
+.posagenda2{position: relative;
+      top: 200px;}
+
+.textosite{position: absolute;
+			  top: 410px;
+			  left: 200px;
+			  width: 540px;
+			  height: 40px;
+			  color: black;			  
+			  font-family: verdana;
+			  font-size: 10px;
+			  text-align: left;}
+
+		  
+
+.textologomarca{position: absolute;
+
+			  top: 520px;
+
+			  width: 800px;
+
+			  left: 0;
+
+			  color: white;		
+
+			  font-family: verdana;
+
+			  font-size: 13px;
+
+			  text-align: center}	
+   
+
+.redesocial{position: relative;
+		 top: 300px;}	
+
+
+.possocial{position: absolute;
+			top: 460px;
+			left: 350px;
+			width: 220px;
+			height: 100px;} 
+
+   
+
+.titulo{position: relative;
+			  top: 80px;
+			  color: #999999;		
+			  font-family: verdana;
+			  font-size: 15px;
+			  font-weight: bold;
+			  text-align: center}  
+			  
+.tituloIcon{position: relative;
+			  top: 100px;
+			  color: #999999;		
+			  text-align: center;}  
+
+.posdiversos{position: relative;
+	top: 130px;
+	font-family: verdana;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: #666600;}
+
+.posdiversosIcones{position: relative;
+	top: 140px;} 	
+
+.saltorow{position: relative;
+    top: 30px;}
+   
+
+/* ID  E CLASS USADOS NA PÁGINA DE CONTATO */
+/* ======================================================================== */	
+
+
+.contato{color: black;
+		 font-family: verdana;
+		 font-size: 13px;
+         font-weight: bold;
+		 text-align: left}
+
+.textocontato{position: relative;
+			  top: 120px;
+			  color: black;		
+			  font-family: verdana;
+			  font-size: 13px;
+			  text-align: left}		 
+		 
+			
+.quadro{position: absolute;
+	    top: 65px;
+		left: 20px;
+		width: 380px;
+		height: 330px;
+		border: 10px;
+		border-color: white;
+		z-index: 1;
+		font-family: verdana;
+		font-size: 12px;
+		text-align: left;
+		font-weight: bold;
+		text-indent: 10px;
+		color: black;}				
+
+.mapa{position: absolute;
+	  top: 75px;
+	  left: 420px;
+	  z-index: 0;}		
+
+.corcampos{background-color: white;
+		   font-family: verdana;
+		   font-size: 10px;
+		   font-weight: bold; 
+		   color: black;
+		   border: 0px}		
+
+
+.textbotao{font-family: verdana;
+		   font-size: 10px;
+		   font-weight: bold;
+		   background-color: #AFAFAF;
+		   color: white;
+		   height: 18px;
+		   width: 55px;
+		   border: 0px}	
+  
+ 
+
+		 
+/* CAPITÃO AMÉRICA VETORIZADO */		 
+/* ====================================================================== */		 
+.ca{position: relative;
+		 top: 100px;}
+			 
+		  
+.textoinformativo{position: relative;
+			  top: 80px;
+			  color: black;		
+			  font-family: verdana;
+			  font-size: 10px;
+			  text-align: center}		  
+		 
+		 
+		 
+
+/* =================== MENU ============================ */
+
+ul.menu {list-style:none; margin:0; padding:0}
+ul.menu * {margin:0; padding:0}
+ul.menu a {display:block; color:#000; text-decoration:none}
+ul.menu li {position:relative; float:left; margin-right:2px}
+ul.menu ul {position:absolute; top:26px; left:0; background:#d1d1d1; display:none; opacity:0; list-style:none}
+ul.menu ul li {position:relative; border:1px solid #aaa; border-top:none; width:148px; margin:0}
+ul.menu ul li a {display:block; padding:3px 7px 5px; background-color:#d1d1d1}
+ul.menu ul li a:hover {background-color:#c5c5c5}
+ul.menu ul ul {left:148px; top:-1px}
+ul.menu .menulink {border:1px solid #aaa; padding:5px 7px 7px; font-weight:bold; background:url(imagens/menu/header.gif); width:134px}
+ul.menu .menulink:hover, ul.menu .menuhover {background:url(imagens/menu/header_over.gif)}
+ul.menu .sub {background:#d1d1d1 url(imagens/menu/arrow.gif) 136px 8px no-repeat}
+ul.menu .topline {border-top:1px solid #aaa}
+
+/* ================= FIM MENU ========================== */	
+
+
+
+/*!!!!!!!!!!! QuickMenu Core CSS [Do Not Modify!] !!!!!!!!!!!!!*/
+/*[START-QCC]*/.qmmc .qmdivider{display:block;font-size:1px;border-width:0px;border-style:solid;position:relative;z-index:1;}.qmmc .qmdividery{float:left;width:0px;}.qmmc .qmtitle{display:block;cursor:default;white-space:nowrap;position:relative;z-index:1;}.qmclear {font-size:1px;height:0px;width:0px;clear:left;line-height:0px;display:block;float:none !important;}.qmmc {position:relative;zoom:1;}.qmmc a, .qmmc li {float:left;display:block;white-space:nowrap;position:relative;z-index:1;}.qmmc div a, .qmmc ul a, .qmmc ul li {float:none;}.qmsh div a {float:left;}.qmmc div{visibility:hidden;position:absolute;}.qmmc .qmcbox{cursor:default;display:inline-block;position:relative;z-index:1;}.qmmc .qmcbox a{display:inline;}.qmmc .qmcbox div{float:none;position:static;visibility:inherit;left:auto;}.qmmc .qmmulti{float:left;position:relative;}.qmmc .qmmulti dd{margin:0px;padding:0px;}.qmmc dd {position:relative;}.qmmc .qmml0 {z-index:99;}.qmmc .qmml1 {z-index:98;}.qmmc .qmml2 {z-index:97;}.qmmc .qmml3 {z-index:96;}.qmmc .qmml4 {z-index:95;}.qmmc .qmml5 {z-index:94;}.qmmc .qmml6 {z-index:93;}.qmmc .qmml7 {z-index:92;}.qmmc .qmml8 {z-index:91;}.qmmc .qmml9 {z-index:90;}.qmmc li {z-index:auto;}.qmmc ul {visibility:hidden;position:absolute;z-index:10;}.qmmc, .qmmc ul, .qmmc dl {list-style:none;padding:0px;margin:0px;}.qmmc li a {float:none;}.qmmc li:hover>ul{visibility:inherit;left:auto;}/*[END-QCC]*//*[START-QCC0]*/#qm0 li, #qm0 a {float:none;}#qm0 li:hover>ul{visibility:inherit;top:0px;left:100%;}#qm0 ul dd:hover>ul{visibility:inherit;top:0px;left:100%;}#qm0 {z-index:9999999;}/*[END-QCC0]*/
+
+
+/*!!!!!!!!!!! QuickMenu Styles !!!!!!!!!!!*/
+
+
+	/* QuickMenu 0 */
+
+	/*"""""""" (MAIN) Container""""""""*/	
+	#qm0	
+	{	
+		width:150px;
+		background-color:transparent;
+	}
+
+
+	/*"""""""" (MAIN) Items""""""""*/	
+	#qm0 a	
+	{	
+		padding:15px 30px 15px 10px;
+		background-color:transparent;
+		color:#313131;
+		font-family:Verdana;
+		font-size:10px;
+		text-decoration:none;
+		font-weight:bold;
+		text-align:left;
+		font-variant:small-caps;
+		border-width:1px 0px 0px;
+		border-style:solid;
+		border-color:#666666;
+	}
+
+
+	/*"""""""" (MAIN) Active State""""""""*/	
+	body #qm0 .qmactive, body #qm0 .qmactive:hover	
+	{	
+		z-index:100;
+		background-color:#FFFFFF;
+	}
+
+
+	/*"""""""" (SUB) Container""""""""*/	
+	#qm0 div, #qm0 ul	
+	{	
+		margin:0px 0px 0px -1px;
+		border-width:1px;
+		border-style:solid;
+		border-color:#666666;
+		box-shadow:0px 0px 4px rgb(153, 153, 153);-moz-box-shadow:0px 0px 4px rgb(153, 153, 153);-webkit-box-shadow:0px 0px 4px rgb(153, 153, 153);-ms-box-shadow:0px 0px 4px rgb(153, 153, 153);-o-box-shadow:0px 0px 4px rgb(153, 153, 153);-khtml-box-shadow:0px 0px 4px rgb(153, 153, 153);
+	}
+
+
+	/*"""""""" (SUB) Column""""""""*/	
+	#qm0 div .qmmulti, #qm0 ul .qmmulti	
+	{	
+		padding:10px;
+	}
+
+
+	/*"""""""" (SUB) Items""""""""*/	
+	#qm0 div a, #qm0 ul a	
+	{	
+		padding:5px 80px 5px 10px;
+		background-color:#FFFFFF;
+		color:#313131;
+		font-size:11px;
+		font-weight:normal;
+		border-width:1px 0px;
+		border-style:solid;
+		border-color:transparent;
+		border-radius:0px 0px 0px 0px;-moz-border-radius:0px 0px 0px 0px;-webkit-border-radius:0px 0px 0px 0px;-ms-border-radius:0px 0px 0px 0px;-o-border-radius:0px 0px 0px 0px;-khtml-border-radius:0px 0px 0px 0px;
+		box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;-ms-box-shadow:none;-o-box-shadow:none;-khtml-box-shadow:none;
+	}
+
+
+	/*"""""""" (SUB) Hover State""""""""*/	
+	#qm0 div a:hover	
+	{	
+		background-color:rgba(102, 102, 102, 0.5);
+		border-color:#666666;
+	}
+
+
+	/*"""""""" (SUB) Hover State - (duplicated for pure CSS)""""""""*/	
+	#qm0 ul li:hover>a, #qm0 ul dd:hover>a	
+	{	
+		background-color:rgba(102, 102, 102, 0.5);
+		border-color:#666666;
+	}
+
+
+	/*"""""""" (SUB) Active State""""""""*/	
+	body #qm0 div .qmactive, body #qm0 div .qmactive:hover	
+	{	
+		background-color:rgba(102, 102, 102, 0.5);
+		border-color:#666666;
+	}
+
+
+	/*"""""""" Individual Titles""""""""*/	
+	#qm0 .qmtitle	
+	{	
+		cursor:default;
+		padding:5px 0px 5px 4px;
+		background-color:rgba(143, 142, 142, 0.5);
+		color:#313131;
+		font-family:Arial;
+		font-size:11px;
+		font-weight:bold;
+		font-variant:small-caps;
+		border-width:0px 0px 1px;
+		border-style:solid;
+		border-color:#666666;
+	}
+
+
+	/*"""""""" Individual Horizontal Dividers""""""""*/	
+	#qm0 .qmdividerx	
+	{	
+		border-top-width:1px;
+		border-color:#666666;
+	}
+
+
+	/*"""""""" Individual Vertical Dividers""""""""*/	
+	#qm0 .qmdividery	
+	{	
+		border-left-width:1px;
+		height:15px;
+		margin:4px 2px 0px;
+		border-color:#555555;
+	}
+
+
+	/*[END-QS0]*/
+	
+	
+	
+	/* ===================================== LIGHTBOX ================================================= */
+
+#lightbox{
+	background-color:#CCCC99;
+	padding: 10px;
+	border-bottom: 2px solid #666;
+	border-right: 2px solid #666;
+	/* formatação da fonte da legenda */
+	font-family: verdana;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #663300;
+	}
+#lightboxDetails{
+	font-size: 0.8em;
+	padding-top: 0.4em;
+	}	
+#lightboxCaption{ float: left; }
+#keyboardMsg{ float: right; }
+#closeButton{ top: 5px; right: 5px; }
+
+#lightbox img{ border: none; clear: both;} 
+#overlay img{ border: none; }
+
+#overlay{ background-image: url(imagens/overlay.png); }
+
+* html #overlay{
+	background-color: #333;
+	background-color: transparent;
+	background-image: url(blank.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="overlay.png", sizingMethod="scale");
+	}
+	
+
+/* =============================== FIM DO LIGHTBOX ================================================ */

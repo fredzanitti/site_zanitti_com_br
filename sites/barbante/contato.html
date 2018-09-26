@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<title>ARTE COM BARBANTE :: Contato</title>
+		
+		<link rel="stylesheet"
+		 href="cssgeral.css"
+		 type="text/css">		 
+		<meta name="name" content="ARTE COM BARBANTE">
+		<meta name="author" content="ARTE COM BARBANTE">
+		<meta name="description" content="ARTE COM BARBANTE">
+		<meta name="keywords" content="portfolio, maria, graca, zanitti, arte, barbante, html, css, tapetes, tapete, flanela, caminho, mesa, forro, pano">		
+	
+	</head>
+	<body>
+
+	<div id="centro">
+		<div id="fundo">
+				
+			<div class="menu bubplastic horizontal blue">
+				<ul>
+					<li><span class="menu_r"><a href="index.html" target="_self"><span class="menu_ar">Home</span></a></span></li>
+					<li><span class="menu_r"><a href="produtos.html" target="_self"><span class="menu_ar">Produtos</span></a></span></li>
+					<li><span class="menu_r"><a href="pedidos.html" target="_self"><span class="menu_ar">Pedidos</span></a></span></li>
+					<li><span class="menu_r"><a href="historia.html" target="_self"><span class="menu_ar">Hist&oacute;ria do Croch&ecirc;</span></a></span></li>
+					<li class="highlight"><span class="menu_r"><a href="contato.html" target="_self"><span class="menu_ar">Contato</span></a></span></li>
+				</ul>
+				<br class="clearit"/>
+			</div>			
+
+			<!-- LOCAL PARA JAVASCRIPT-->
+			<script type="text/javascript">
+				
+				//funciona no IE
+				function mascara(formato, keypress, objeto){
+					campo = eval(objeto);
+					if(formato=='telefone'){
+						separador1 = '(';
+						separador2 = ')';
+						separador3 = '-';
+						conjunto1 = 0;
+						conjunto2 = 3;
+						conjunto3 = 8;
+						if(campo.value.length == conjunto1){
+							campo.value = campo.value + separador1;
+						}
+						if(campo.value.length == conjunto2){
+							campo.value = campo.value + separador2;
+						}
+						if(campo.value.length == conjunto3){
+							campo.value = campo.value + separador3;
+						}					
+					}
+				}
+				
+				//funciona no Firefox
+				function formatTelefone(element, e){
+					if (e.keyCode != 8){
+							length = element.value.length;
+						if (length == 2){
+						if (element.value.charAt(0)!="(")
+							element.value = "(" + element.value + ")";
+						}
+						if (length == 3)
+						if (element.value.charAt(0)=="(")
+							element.value += ")";
+						if (length == 8)
+							element.value += "-";
+					}
+				}
+			
+					
+				function validar(form){
+					var nome = form.usuario.value;
+					var email = form.email.value;
+					var telefone = form.tel.value;
+					var msg = form.mensagem.value;
+					
+					if(nome == ""){
+						alert("O preenchmimento do nome é obrigatório");
+						form.usuario.focus();
+						return false;
+					}
+
+					if(telefone == ""){
+						alert("Preencha o campo com telefone.\nFormato (xx)xxxx-xxxx (digitar só números)");
+						form.tel.focus();
+						return false;
+					}	
+
+					if(msg == ""){
+						alert("A mensagem não pode estar em branco \ndeve conter no mínimo 15 caracteres!");
+						form.mensagem.focus();
+						return false;
+					}	
+					
+				}
+				
+			</script>
+			
+			<form onsubmit="return validar(this);" id="contato" name="contatophp" method="post" action="formulario.php" target="_top">
+				Nome*&nbsp;
+				<input type="text" name="usuario" onkeydown="this.value = this.value.toUpperCase();" size="41" class="corcampos"/>&nbsp;&nbsp;&nbsp;<br><br>
+				Cidade&nbsp;
+				<input type="text" name="cidade" onkeydown="this.value = this.value.toUpperCase();" size="40" class="corcampos"/>&nbsp;&nbsp;&nbsp;<br><br>
+				E-mail&nbsp;
+				<input type="text" name="email" onkeydown="this.value = this.value.toLowerCase();" size="80" class="corcampos"/>&nbsp;&nbsp;&nbsp;<br><br>
+				Telefone*&nbsp;
+				<input type="text" name="tel" onkeydown="formatTelefone(this, event);" onkeypress="mascara('telefone',window.event.keyCode,'document.contatophp.tel');" maxlength="13" size="30" class="corcampos"/>&nbsp;&nbsp;&nbsp;
+				Celular&nbsp;
+				<input type="text" name="cel" onkeydown="formatTelefone(this, event);" onkeypress="mascara('telefone',window.event.keyCode,'document.contatophp.cel');" maxlength="13" size="30" class="corcampos"/>&nbsp;<br><br>					
+				Mensagem*&nbsp;<br><br>
+				<textarea name="mensagem" cols="85" rows="5" class="corcampos2"></textarea><br><br>
+				
+				<input type="submit" value="Enviar" class="textbotao"/>
+				<input type="reset" value="Limpar" class="textbotao"/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<font class="fontegenerica">
+					Os campos com * s&atilde;o de preenchimento obrigat&oacute;rio.
+				</font>
+				
+			</form>
+
+
+			
+			<img src="images/fundocontato.jpg">
+			
+		</div>
+	</div>	
+	</body>
+</html>

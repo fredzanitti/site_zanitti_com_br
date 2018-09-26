@@ -1,0 +1,860 @@
+/* GLOBAIS */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+}
+
+html{
+
+    width:100%;
+
+    height:100%;
+
+}
+
+
+
+/* CENTRALIZAR */
+
+body {background: url("imagens/fundo.jpg");
+      background-attachment: fixed;
+      text-align:center;
+      width:100%;
+      height:100%;}
+
+
+
+#centro{
+
+    margin: 0 auto;
+
+    width:800px;
+
+    border: 0;
+
+    vertical-align:top;
+
+    position:relative;}
+
+/* FIM CENTRALIZAR*/
+
+a:link {text-decoration: none; color: black;}
+a:visited {text-decoration: none; color: black;}
+a:active {text-decoration: none; color: black;}
+a:hover {font-size:24; font-weight:bold; color: red;}
+
+
+#fundo{/*background: url("imagens/fundo1.png");*/
+    height: 600px;
+    width: 800px;
+    position: absolute;
+    top: 10px;
+    left: 0px
+}
+#fundo1{background: url("imagens/fundo1.png");
+        height: 600px;
+        width: 800px;
+        position: absolute;
+        top: 10px;
+        left: 0px
+}  
+
+#slogan{font-family: verdana;
+        font-size: 10px;
+        color: white;
+        position: absolute;
+        top: 520px;
+        left: 250px;
+        /*width: 800px;	  */
+        text-align: center;
+        line-height: 15px}  
+
+.texto{font-family: verdana;
+       font-size: 14px;
+       color: black;
+       position: absolute;
+       top: 180px;
+       left: 20px;
+       width: 760px; /* largura */
+       height: 400px; /* altura */
+       text-align: left;
+       line-height: 20px}   
+	   
+.endereco{font-family: verdana;
+       font-size: 18px;
+       color: white;
+       position: absolute;
+       top: 410px;
+       left: 0px;
+	   width: 800px; /* largura */
+       text-align: center;
+       line-height: 28px} 
+	   
+.enderecocontato{font-family: verdana;
+       font-size: 13px;
+       color: black;
+       position: absolute;
+       top: 505px;
+       left: 0px;
+	   width: 800px; /* largura */
+       text-align: center;
+       line-height: 18px}  	   
+
+.logopq{position: absolute;
+        top: 70px;
+        left: 400px;
+        width: 481px; /* largura */
+        height: 150px; /* altura */}  
+
+.titulo{position: absolute;
+        top: 100px;
+		left: 40px;
+		font-family: verdana;
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+        text-align: left;}	   
+
+#logo{position: absolute;
+      top: 170px;
+      left: 98px}	  
+
+
+#menugeral{position: absolute;
+           top: 25px;
+           left: 0px;
+           display: block;
+           font-family: verdana;
+           font-size: 10px;
+           width: 100%;
+           height: 70px;
+           z-index: 1}
+
+.logocli1{position: absolute;
+          top: 170px;
+          left: 52px;
+          width: 156px; /* largura */
+          height: 102px; /* altura */}
+
+.logocli2{position: absolute;
+          top: 170px;
+          left: 232px;
+          width: 156px; /* largura */
+          height: 102px; /* altura */}
+
+.logocli3{position: absolute;
+          top: 170px;
+          left: 412px;
+          width: 156px; /* largura */
+          height: 102px; /* altura */}
+
+.logocli4{position: absolute;
+          top: 170px;
+          left: 592px;
+          width: 156px; /* largura */
+          height: 102px; /* altura */}
+
+.logocli5{position: absolute;
+          top: 305px;
+          left: 52px;
+          width: 156px; /* largura */
+          height: 102px; /* altura */}
+
+.logocli6{position: absolute;
+          top: 305px;
+          left: 232px;
+          width: 156px; /* largura */
+          height: 102px; /* altura */}
+
+.logocli7{position: absolute;
+          top: 305px;
+          left: 412px;
+          width: 156px; /* largura */
+          height: 102px; /* altura */}
+
+.logocli8{position: absolute;
+          top: 305px;
+          left: 592px;
+          width: 156px; /* largura */
+          height: 102px; /* altura */}
+
+.logocli9{position: absolute;
+          top: 439px;
+          left: 52px;
+          width: 156px; /* largura */
+          height: 102px; /* altura */}	
+
+.logocli10{position: absolute;
+          top: 439px;
+          left: 232px;
+          width: 156px; /* largura */
+          height: 102px; /* altura */}
+
+.logocli11{position: absolute;
+          top: 439px;
+          left: 412px;
+          width: 156px; /* largura */
+          height: 102px; /* altura */}		  
+
+
+#contato{position: absolute;
+         top: 190px;
+         left: 100px;
+         color: black;
+         font-family: verdana;
+         font-size: 11px;
+         text-align: left;
+         z-index: 1}
+
+.corcampos{background-color: rgb(252,251,189);
+           font-family: verdana;
+           font-size: 10px;
+           font-weight: bold;
+           color: #3A5FCD;
+           border: 0px;
+           height: 20px}
+
+.corcampos2{background-color: rgb(252,251,189);
+            font-family: verdana;
+            font-size: 10px;
+            font-weight: bold;
+            color: #3A5FCD;
+            border: 0px;}
+
+.textbotao{font-family: verdana;
+           font-size: 11px;
+           font-weight: bold;
+           color: black;
+           width: 80px;
+           height: 25px;}
+
+.fontegenerica{color: black;
+               font-family: verdana;
+               font-size: 9px;
+               text-align: left}
+
+.mensagemobrigado{position: absolute;
+                  color: black;
+                  font-family: verdana;
+                  font-size: 16px;
+                  text-align: center;
+                  top: 280px;
+                  left: 250px}
+
+.contvisit{position: absolute;
+		   font-family: verdana;
+           font-size: 17px;
+           font-weight: bold;
+           color: black;
+           top: 100px;
+		   left: 95px}				  
+
+.posdiversos{position: absolute;} 	
+
+	/* ===================================== LIGHTBOX ================================================= */
+
+#lightbox{
+	background-color:#CCCC99;
+	padding: 10px;
+	border-bottom: 2px solid #666;
+	border-right: 2px solid #666;
+	/* formata&ccedil;&atilde;o da fonte da legenda */
+	font-family: verdana;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #663300;
+	}
+#lightboxDetails{
+	font-size: 0.8em;
+	padding-top: 0.4em;
+	}	
+#lightboxCaption{ float: left; }
+#keyboardMsg{ float: right; }
+#closeButton{ top: 5px; right: 5px; }
+
+#lightbox img{ border: none; clear: both;} 
+#overlay img{ border: none; }
+
+#overlay{ background-image: url(imagens/overlay.png); }
+
+* html #overlay{
+	background-color: #333;
+	background-color: transparent;
+	background-image: url(blank.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="overlay.png", sizingMethod="scale");
+	}
+	
+.galeria{
+	position: absolute;
+    height: 350px;
+    width: 760px;
+	font-family: verdana;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: #666600;
+}	
+
+/* =============================== FIM DO LIGHTBOX ================================================ */
+		   
+				  
+
+/*---- SITE VICAF -----------------------------------------------------------------------*/	   
+
+/*
+#fontpequena{position: absolute;
+        top: 612px;
+        left: 0px;
+        font-family: verdana;
+        font-size: 9px;}	  
+
+
+#fontpequena2{position: absolute;
+        top: 595px;
+        left: 54px;
+        font-family: verdana;
+        font-size: 9px;}	  
+
+
+#desmenu{position: absolute;
+        top: 70px;
+        left: 20px;
+        font-family: verdana;
+        font-size: 10px;}
+        
+
+#menuagenda1{position: absolute;
+
+        top: 90px;
+
+        left: 0px}
+
+        
+
+.tuto{position: absolute;
+
+        top: 480px;
+
+        left: 200px}
+
+.fotoperfil{position: absolute;
+        top: 60px;
+        left: 470px}	   
+
+
+
+.down{position: absolute;
+
+        top: 480px;
+
+        left: 460px}	
+
+        
+
+.down2{position: absolute;
+
+        top: 360px;
+
+        width: 800px;
+
+        }	   
+
+        
+
+.down3{position: absolute;
+
+        top: 390px;
+
+        width: 800px;
+
+        }	   
+
+        
+
+#menuagenda2{position: absolute;
+
+        top: 150px;
+
+        left: 0px}	   
+
+        
+
+#menuagenda3{position: absolute;
+
+        top: 210px;
+
+        left: 0px}	   
+
+
+
+
+
+
+
+     
+
+
+
+
+#thankyou{font-family: verdana;
+       font-size: 16px;
+       color: black;
+       position: absolute;
+       top: 310px;
+       left: 220px;
+       text-align: center;
+       font-weight: bolder;
+       line-height: 25px}
+
+
+#mensagem{font-family: verdana;
+       font-size: 16px;
+       color: white;
+       position: absolute;
+       top: 450px;
+       left: 240px;
+       text-align: center;
+       line-height: 15px}	  
+
+
+
+       
+
+       
+
+#btnvoltar{position: absolute;
+
+                top: 480px;
+
+                left: 370px}		  
+
+       
+
+#webmail{position: absolute;
+
+          top: 490px;
+
+          left: 220px;
+
+              color: white;
+
+              font-family: verdana;
+
+              font-size: 11px}	
+
+
+
+.figuramail{position: absolute;
+
+                     top: 482px;
+
+                     left: 110px}		 
+
+
+
+.formattexto{position: absolute;
+             top: 90px;
+             left: 60px;
+             width: 700px;
+             text-align: left;
+             line-height: 20px}
+
+                        
+.textoapre1{  font-family: verdana;
+                       font-size: 13px;
+                       color: black;
+                       font-weight: bolder}
+
+.textoapre2{  font-family: verdana;
+                       font-size: 13px;
+                       color: #7A7A7A}			  
+
+             
+
+.foto{position: absolute;
+
+             top: 150px;
+
+             left: 100px}			
+              
+#possites{position: absolute;
+              top: 60px;
+              left: 80px;
+              width: 816px;
+              height: 516px;
+              z-index: 1}			
+              
+#desenhos{position: absolute;
+              top: 90px;
+              left: 0px;
+              width: 816px;
+              height: 516px;
+              z-index: 1}
+              
+#agendas{position: absolute;
+              top: 100px;
+              left: 55px;
+              width: 700px;
+              height: 490px;
+              z-index: 1}
+              
+#diversos{position: absolute;
+              top: 100px;
+              left: 100px;
+              width: 604px;
+              height: 550px;
+              z-index: 1}
+              
+#logomarcas{position: absolute;
+              top: 80px;
+              left: 100px;
+              width: 604px;
+              height: 550px;
+              z-index: 1}		 
+
+.textodiversos{position: absolute;
+              top: 50px;
+              left: 20px;
+              width: 755px;
+              color: black;		
+              font-family: verdana;
+              font-size: 12px;
+              text-align: center;
+              line-height: 20px;
+              }	
+              
+.textorodape{position: absolute;
+              top: 490px;
+              left: 20px;
+              width: 755px;
+              color: black;		
+              font-family: verdana;
+              font-size: 11px;
+              text-align: center;
+              }			 
+
+      
+              
+.imgsoft{float: left;
+              width: 350px;
+              height: 210px;
+      margin: 0px 20px 10px 0px}
+              /*Margens: topo - esquerda - baixo - direita
+
+.formattextsoft{position: absolute;
+              top: 70px;
+              left: 220px;
+              width: 550px;
+              font-family: verdana;
+              font-size: 11px;
+              text-align: left;
+              line-height:150%}		 
+
+              
+.download{position: absolute;
+              top: 375px;
+              left: 85px;
+              z-index: 1}		 
+
+.iconnextagenda{position: absolute;
+              top: 60px;
+              left: 725px;
+              z-index: 1}		 
+
+.iconnext{position: absolute;
+              top: 300px;
+              left: 725px;
+              z-index: 1}
+              
+.iconprev{position: absolute;
+              top: 300px;
+              left: 50px;
+              z-index: 1}		 
+              
+
+.exp1{position: absolute;
+
+   top: 100px;
+
+       left: 60px}
+
+       
+
+.exp2{position: absolute;
+
+   top: 100px;
+
+       left: 420px}	
+
+       
+.site1{position: absolute;
+   top: 90px;
+       left: 30px}
+       
+.site2{position: absolute;
+   top: 90px;
+       left: 290px}	  	  
+       
+.site3{position: absolute;
+   top: 90px;
+       left: 550px}		
+       
+.site4{position: absolute;
+   top: 280px;
+       left: 30px}	  
+
+.fontemenu{font-size: 8px;}
+       
+
+.textoexp1{position: absolute;
+                       top: 515px;
+                       left: 60px;
+                       width: 300px;
+                       height: 70px;
+                       color: black;		
+                       font-family: verdana;
+                       font-size: 11px;
+                       text-align: center}	  
+
+.textoexp2{position: absolute;
+                       top: 515px;
+                       left: 420px;
+                       width: 300px;
+                       color: black;		
+                       height: 70px;
+                       font-family: verdana;
+                       font-size: 11px;
+                       text-align: center}	 
+
+.textosite{position: absolute;
+                       top: 410px;
+                       left: 200px;
+                       width: 540px;
+                       height: 40px;
+                       color: black;			  
+                       font-family: verdana;
+                       font-size: 10px;
+                       text-align: left;}
+
+               
+
+.textologomarca{position: absolute;
+
+                       top: 520px;
+
+                       width: 800px;
+
+                       left: 0;
+
+                       color: white;		
+
+                       font-family: verdana;
+
+                       font-size: 13px;
+
+                       text-align: center}	
+
+
+#fb{position: absolute;
+              top: 0px;
+              left: 0px;
+              width: 40px;
+              height: 40px;}	
+
+
+#in{position: absolute;
+              top: 0px;
+              left: 90px;
+              width: 40px;
+              height: 40px;}
+
+
+#gp{position: absolute;
+              top: 0px;
+              left: 45px;
+              width: 40px;
+              height: 40px;} 
+
+.possocial{position: absolute;
+                     top: 460px;
+                     left: 350px;
+                     width: 220px;
+                     height: 100px;} 
+
+
+
+
+/* ID  E CLASS USADOS NA PÁGINA DE CONTATO */
+/* ========================================================================	
+
+
+#contato{position: relative;
+             top: 20px;
+             left: 15px;
+                 color: black;
+                 font-family: verdana;
+                 font-size: 11px;
+                 text-align: left}
+
+.textocontato{position: absolute;
+                          top: 510px;
+                          left: 139px;
+                          width: 522px;
+                          height: 100px;
+                          color: black;		
+                          font-family: verdana;
+                          font-size: 10px;
+                          text-align: center}		 
+                 
+                        
+.quadro{position: absolute;
+            top: 95px;
+                left: 20px;
+                width: 380px;
+                height: 330px;
+                border: 10px;
+                border-color: white;
+                z-index: 1;
+                font-family: verdana;
+                font-size: 12px;
+                text-align: left;
+                font-weight: bold;
+                text-indent: 10px;
+                color: black;}				
+
+.mapa{position: absolute;
+          top: 75px;
+          left: 420px;
+          z-index: 0;}		
+
+.corcampos{background-color: white;
+                   font-family: verdana;
+                   font-size: 10px;
+                   font-weight: bold; 
+                   color: black;
+                   border: 0px}		
+
+
+.textbotao{font-family: verdana;
+                   font-size: 10px;
+                   font-weight: bold;
+                   background-color: #AFAFAF;
+                   color: white;
+                   height: 18px;
+                   width: 55px;
+                   border: 0px}	
+  
+ 
+
+                 
+/* CAPIT&atilde;O AM&eacute;RICA VETORIZADO */		 
+/* ======================================================================		 
+#ca{position: absolute;
+                 top: 100px;
+                 left: 250px;
+                 width: 286px;
+                 height: 472px;}			  
+                         
+                  
+.textoinformativo{position: absolute;
+                          top: 60px;
+                          left: 20px;
+                          color: black;		
+                          width: 755px;
+                          height: 20px;
+                          font-family: verdana;
+                          font-size: 10px;
+                          text-align: center}		  
+                 
+                 
+*/		 
+
+/* =================== MENU ============================ */
+
+#cssmenu{
+    border:none;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    font: 67.5% 'Lucida Sans Unicode', 'Bitstream Vera Sans', 'Trebuchet Unicode MS', 'Lucida Grande', Verdana, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:bold;
+}
+#cssmenu ul{
+    background:#333333;
+    height:35px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#cssmenu li{
+    float:left;
+    padding:0px;
+}
+#cssmenu li a{
+    background:#333333 url('imagens/seperator.gif') bottom right no-repeat;
+    color:#cccccc;
+    display:block;
+    font-weight:normal;
+    line-height:35px;
+    margin:0px;
+    padding:0px 25px;
+    text-align:center;
+    text-decoration:none;
+}
+#cssmenu li a:hover, #cssmenu ul li:hover a{
+    background: #2580a2 url('imagens/hover.gif') bottom center no-repeat;
+    color:#FFFFFF;
+    text-decoration:none;
+}
+#cssmenu li ul{
+    background:#333333;
+    display:none;
+    height:auto;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    position:absolute;
+    width:225px;
+    z-index:200;
+    /*top:1em;
+    /*left:0;*/
+}
+#cssmenu li:hover ul{
+    display:block;
+
+}
+#cssmenu li li {
+    background:url('imagens/sub_sep.gif') bottom left no-repeat;
+    display:block;
+    float:none;
+    margin:0px;
+    padding:0px;
+    width:225px;
+}
+#cssmenu li:hover li a{
+    background:none;
+
+}
+#cssmenu li ul a{
+    display:block;
+    height:35px;
+    font-size:12px;
+    font-style:normal;
+    margin:0px;
+    padding:0px 10px 0px 15px;
+    text-align:left;
+}
+#cssmenu li ul a:hover, #cssmenu li ul li:hover a{
+    background:#2580a2 url('imagens/hover_sub.gif') center left no-repeat;
+    border:0px;
+    color:#ffffff;
+    text-decoration:none;
+}
+#cssmenu p{
+    clear:left;
+}	

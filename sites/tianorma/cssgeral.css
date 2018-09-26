@@ -1,0 +1,832 @@
+/* GLOBAIS */ 
+
+*{
+
+margin:0;
+
+padding:0;
+
+}
+
+
+
+html{
+
+width:100%;
+
+height:100%;
+
+}
+
+
+
+ /* CENTRALIZAR */
+
+body {background: url(images/retalho.jpg);
+
+     text-align:center;
+
+	 width:100%;
+
+	 height:100%;}
+
+
+
+#centro{
+
+	margin: 0 auto;
+
+    width:960px;
+
+	border: 0;
+
+    vertical-align:top;
+
+    position:relative;} 
+
+/* FIM CENTRALIZAR*/ 
+
+
+
+
+
+#fundo{background: url(images/fundo.png) no-repeat;
+	   height: 860px;
+	   width: 960px;
+	   position: absolute;
+	   top: 10px;
+	   left: 0px;}
+	   
+#fundo2{background: url(images/fundo2.png) no-repeat;
+	   height: 860px;
+	   width: 960px;
+	   position: absolute;
+	   top: 10px;
+	   left: 0px;}	   
+
+#menu{background: white;
+	   width: 937px;
+	   position: absolute;
+	   top: 10px;
+	   left: 11px;}
+
+	   
+.fundoc1{position: absolute;
+	   top: 80px;
+	   left: 50px;
+	   width: 425px;
+	   height: 250px;}
+
+.fundoc2{position: absolute;
+	   top: 80px;
+	   left: 475px;
+	   width: 425px;
+	   height: 250px;}	   
+
+.fundoc3{position: absolute;
+	   top: 330px;
+	   left: 50px;
+	   width: 425px;
+	   height: 250px;}
+
+.fundoc4{position: absolute;
+	   top: 330px;
+	   left: 475px;
+	   width: 425px;
+	   height: 250px;}
+	   
+
+
+#new{position: absolute;
+		 top: 100px;
+		 left: 250px;
+		 width: 500px;
+		 height: 350px;
+		 z-index: 1}
+
+	   
+
+#slogan{font-family: verdana;
+
+	  font-size: 10px;
+
+	  color: #999999;
+
+	  position: absolute;
+
+	  top: 530px;
+
+	  left: 300px;
+
+	  text-align: center;
+
+	  line-height: 15px}	
+
+
+
+#fone{font-family: Microsoft Sans Serif;
+
+	  font-size: 35px;
+
+	  font-weight: bolder;
+
+	  color: #999999;
+
+	  position: absolute;
+
+	  top: 533px;
+
+	  left: 656px;
+
+	  text-align: center;}		
+
+
+
+#contato{position: absolute;
+	     top: 245px;
+	     left: 200px;
+		 color: black;
+		 font-family: verdana;
+		 font-size: 11px;
+		 text-align: left;
+		 z-index: 1}	
+
+		 
+
+#contato2{position: absolute;
+	     top: 220px;
+	     left: 193px;
+		 color: black;
+		 color: black;
+		 font-family: verdana;
+		 font-size: 11px;
+		 text-align: left;
+		 z-index: 1}	
+		 
+
+.fontegenerica{color: black;
+		 font-family: verdana;
+		 font-size: 9px;
+		 text-align: left}
+		 
+.fontegenerica2{color: black;
+		 font-family: verdana;
+		 font-size: 14px;
+		 font-weight: bolder;
+		 text-align: left}
+
+.fontegenerica3{color: black;
+		 font-family: verdana;
+		 font-size: 13px;
+		 text-align: left}		 
+		 
+		 
+#textcont2{position: absolute;
+	     top: 600px;
+	     left: 160px;
+		 z-index: 1;
+		 text-align: left;
+		 width: 650px}
+
+
+#posicaofontgen{position: absolute;
+
+		top: 40px;
+
+		left: 310px;
+
+}
+
+
+
+.corcampos{background-color: white;
+
+		   font-family: verdana;
+
+		   font-size: 10px;
+
+		   font-weight: bold;
+
+		   color: #3A5FCD;
+
+		   border: 0px;
+
+		   height: 20px}	
+
+
+
+ .corcampos2{background-color: white;
+
+		   font-family: verdana;
+
+		   font-size: 10px;
+
+		   font-weight: bold;
+
+		   color: #3A5FCD;
+
+		   border: 0px;}
+
+
+
+ .corcampos3{background-color: white;
+
+		   font-family: verdana;
+
+		   font-size: 10px;
+
+		   color: #3A5FCD;
+
+		   border: 0px;
+
+		   width: 50px;
+
+		   height: 20px}
+
+
+
+ .corcampos4{background-color: white;
+
+		   font-family: verdana;
+
+		   font-size: 10px;
+
+		   color: #3A5FCD;
+
+		   border: 0px;
+
+		   width: 100px;
+
+		   height: 20px}		   
+
+
+
+.textbotao{font-family: verdana;
+		   font-size: 11px;
+		   font-weight: bold;
+		   color: black;}	
+
+		   
+
+
+
+ #obrigado{font-family: verdana;
+
+	  font-size: 15px;
+
+	  color: #3A5FCD;
+
+	  position: absolute;
+
+	  top: 300px;
+
+	  left: 300px;
+
+	  text-align: center;
+
+	  line-height: 20px}
+
+	  
+
+ #logoobrigado{position: absolute;
+
+	  top: 210px;
+
+	  left: 405px;}	  
+
+ 
+
+ 
+
+ .textocorpo{
+
+			position: absolute;
+
+			top: 170px;
+
+			left: 80px;
+
+			font-family: verdana;
+
+			font-size: 12px;
+
+			color: #3A5FCD;
+
+			line-height: 20px;
+
+			text-align: justify;
+
+			border: 0px;
+
+			width: 800px;}	
+
+ 
+
+  #rodape{position: absolute;
+
+	  top: 520px;
+
+	  left: 0px;} 
+
+	  
+
+  #logozanitti{position: absolute;
+
+	  top: 570px;
+	  left: 390px}
+
+
+ 
+
+ 
+
+ #fotogrande{position: absolute;
+
+	  top: 55px;
+
+	  left: 0px;} 
+
+	  
+
+ #logohome{position: absolute;
+
+	  top: 200px;
+
+	  left: 180px;}
+	  
+ #novidades{position: absolute;
+
+	  top: 430px;
+
+	  left: 250px;}	  
+
+	  
+
+ #logopequena{position: absolute;
+
+	  top: 10px;
+
+	  left: 405px;}
+
+	  
+
+#textofotogrande{font-family: verdana;
+
+	  font-size: 10px;
+
+	  color: #3A5FCD;
+
+	  position: absolute;
+
+	  top: 540px;
+
+	  left: 330px;
+
+	  text-align: center;
+
+	  line-height: 15px}
+
+	  
+
+.textoinfo{font-family: arial;
+
+	  font-size: 16px;
+
+	  color: #999999;
+
+	  position: absolute;
+
+	  top: 150px;
+
+	  left: 25px;
+
+	  text-align: left;
+
+	  line-height: 20px}
+
+
+.detalhe1{position: absolute;
+
+	  left: 25px;
+	  top: 405px}	  
+	  
+.detalhe2{position: absolute;
+
+	  left: 85px;
+	  top: 405px}
+	  
+.anterior{position: absolute;
+
+	  left: 20px;
+	  top: 470px}	  
+
+ 
+
+.esquerda1{position: absolute;
+
+	  left: 125px;}
+ 
+.esquerda2{position: absolute;
+
+	  left: 315px;}
+
+.esquerda3{position: absolute;
+
+	  left: 505px;}
+
+.esquerda4{position: absolute;
+
+	  left: 695px;}
+  
+
+.acima1{position: absolute;
+
+	  top: 80px;}	  
+
+.acima2{position: absolute;
+
+	  top: 250px;} 
+
+.acima3{position: absolute;
+
+	  top: 420px;} 
+
+.erroie_l{position: absolute;
+		top: 16px;
+		left: 11px;
+		z-index: 1}
+
+.erroie_r{position: absolute;
+		top: 16px;
+		left: 945px;
+		z-index: 1}	
+
+.faixa{ position: absolute;
+		top: 78px;
+		left: 0px;
+		z-index: 1}			
+		
+.iconpq1{position: absolute;
+		top: 96px;
+		left: 899px;
+		z-index: 1;}
+.iconpq2{position: absolute;
+		top: 96px;
+		left: 867px;
+		z-index: 1;}		
+.iconpq3{position: absolute;
+		top: 96px;
+		left: 835px;
+		z-index: 1;}		
+.iconpq4{position: absolute;
+		top: 96px;
+		left: 803px;
+		z-index: 1;}		
+.iconpq5{position: absolute;
+		top: 96px;
+		left: 771px;
+		z-index: 1;}		
+.iconpq6{position: absolute;
+		top: 96px;
+		left: 739px;
+		z-index: 1;}		
+.iconpq7{position: absolute;
+		top: 96px;
+		left: 707px;
+		z-index: 1;}		
+.iconpq8{position: absolute;
+		top: 96px;
+		left: 675px;
+		z-index: 1;}		
+.iconpq9{position: absolute;
+		top: 96px;
+		left: 643px;
+		z-index: 1;}		
+.iconpq10{position: absolute;
+		top: 96px;
+		left: 611px;
+		z-index: 1;}		
+.iconpq11{position: absolute;
+		top: 96px;
+		left: 579px;
+		z-index: 1;}
+.iconpq12{position: absolute;
+		top: 96px;
+		left: 579px;
+		z-index: 1;}		
+		
+		
+
+.legenda{ font-family: verdana;
+		  font-size: 13px;
+		  font-weight: bolder;
+		  color: gray;
+		  position: absolute;
+		  width: 150px;
+		  height: 42px;		  
+		  text-align: center;}			
+		
+.esqprod1{position: absolute;
+		  left: 99px;}
+
+.esqprod2{position: absolute;
+		  left: 303px;}		
+
+.esqprod3{position: absolute;
+		  left: 507px;}		  
+
+.esqprod4{position: absolute;
+		  left: 711px;}		  		  
+		  
+		  
+.acimaleg1{position: absolute;
+		    top: 245px;}
+
+.acimaleg2{position: absolute;
+		    top: 385px;}
+
+.acimaleg3{position: absolute;
+		    top: 525px;}
+	  
+.acimaleg4{position: absolute;
+		    top: 665px;}
+
+			
+.acimaprod1{position: absolute;
+		    top: 160px;}	
+
+.acimaprod2{position: absolute;
+		    top: 300px;}		
+
+.acimaprod3{position: absolute;
+		    top: 440px;}			
+			
+.acimaprod4{position: absolute;
+		    top: 580px;}			
+	  
+
+	  
+	  
+#quems1{ background: url(images/quemsou/quemsomos_01.gif) no-repeat;
+		 position: absolute;
+		 top: 80px;
+		 left: 0px;
+		 width: 295px;
+		 height: 160px;}
+		 
+#quems2{ background: url(images/quemsou/quemsomos_05.gif) no-repeat;
+		 position: absolute;
+		 top: 240px;
+		 left: 0px;
+		 width: 295px;
+		 height: 152px;}		 
+
+#quems3{ background: url(images/quemsou/quemsomos_09.gif) no-repeat;
+		 position: absolute;
+		 top: 392px;
+		 left: 0px;
+		 width: 295px;
+		 height: 138px;}		 
+
+#quems4{ background: url(images/quemsou/quemsomos_02.gif) no-repeat;
+		 position: absolute;
+		 top: 80px;
+		 left: 295px;
+		 width: 243px;
+		 height: 210px;}		 
+		 
+#quems5{ background: url(images/quemsou/quemsomos_03.gif) no-repeat;
+		 position: absolute;
+		 top: 80px;
+		 left: 538px;
+		 width: 225px;
+		 height: 160px;}		 
+
+#quems6{ background: url(images/quemsou/quemsomos_04.gif) no-repeat;
+		 position: absolute;
+		 top: 80px;
+		 left: 763px;
+		 width: 196px;
+		 height: 160px;}	
+
+#quems7{ background: url(images/quemsou/quemsomos_10.jpg) no-repeat;
+		 position: absolute;
+		 top: 392px;
+		 left: 295px;
+		 width: 243px;
+		 height: 138px;}	
+
+#quems8{ background: url(images/quemsou/quemsomos_08.gif) no-repeat;
+		 position: absolute;
+		 top: 290px;
+		 left: 295px;
+		 width: 243px;
+		 height: 102px;}		 
+	  
+#quems9{ background: url(images/quemsou/quemsomos_06.gif) no-repeat;
+		 position: absolute;
+		 top: 240px;
+		 left: 538px;
+		 width: 225px;
+		 height: 175px;}
+
+#quems10{ background: url(images/quemsou/quemsomos_07.gif) no-repeat;
+		 position: absolute;
+		 top: 240px;
+		 left: 763px;
+		 width: 196px;
+		 height: 175px;}		 
+
+#quems11{ background: url(images/quemsou/quemsomos_11.gif) no-repeat;
+		 position: absolute;
+		 top: 415px;
+		 left: 538px;
+		 width: 225px;
+		 height: 115px;}	
+		 
+#quems12{ background: url(images/quemsou/quemsomos_12.gif) no-repeat;
+		 position: absolute;
+		 top: 415px;
+		 left: 763px;
+		 width: 196px;
+		 height: 175px;}			 
+	  
+/* ==================================MENU================================= */
+
+@charset "utf-8";
+/* CSS Document */
+
+/*^'^ Navigation Structure ^'^*/
+.nav-container-outer{
+background: #990000;
+padding: 0px;
+height: 74px;
+background: url(images/nav-bg.jpg);
+}
+.float-left{
+float: left;
+}
+.float-right{
+float: right;
+}
+.nav-container .divider{
+display:block;
+font-size:1px;
+border-width:0px;
+border-style:solid;
+}
+.nav-container .divider-vert{
+float:left;
+width:0px;
+display: none;
+}
+.nav-container .item-secondary-title{
+display:block;
+cursor:default;
+white-space:nowrap;
+}
+.clear{
+font-size:1px;
+height:0px;
+width:0px;
+clear:left;
+line-height:0px;
+display:block;
+float:none;
+}
+.nav-container{
+position:relative;
+zoom:1;
+margin: 0 auto;
+}
+.nav-container a, .nav-container li{
+float:left;
+display:block;
+white-space:nowrap;
+}
+.nav-container div a, .nav-container ul a, .nav-container ul li{
+float:none;
+}
+.nav-container ul{
+left:-10000px;
+position:absolute;
+}
+.nav-container, .nav-container ul{
+list-style:none;
+padding:0px;
+margin:0px;
+}
+.nav-container li a{
+float:none
+}
+.nav-container li{
+position:relative;
+}
+.nav-container ul{
+z-index:10;
+}
+.nav-container ul ul{
+z-index:20;
+}
+.nav-container ul ul ul{
+z-index:30;
+}
+.nav-container ul ul ul ul{
+z-index:40;
+}
+.nav-container ul ul ul ul ul{
+z-index:50;
+}
+li:hover>ul{
+left:auto;
+}
+#nav-container ul {
+top:100%;
+}
+#nav-container ul li:hover>ul{
+top:0px;
+left:100%;
+}
+
+/*^'^ Primary Items ^'^*/	
+#nav-container a{	
+padding:7px 17px 7px 18px;
+margin: 10px 0px 0px 0px;
+color: #FFFFFF;
+font-family: Trebuchet MS, Arial, sans-serif, Helvetica;
+font-size:14px;
+text-decoration:none;
+font-weight: bold;
+background: url(images/item-primary-bg.gif);
+background-repeat: no-repeat;
+background-position: top;
+}
+
+#nav-container a:hover{
+color: #6C3600;
+background: url(images/item-primary-bg.gif);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+/*^'^ Secondary Items Container ^'^*/	
+#nav-container div, #nav-container ul{	
+padding:10px 4px 10px 4px;
+margin:0px 0px 0px 0px;
+background: url(images/item-secondary-container-bg.jpg);
+background-repeat: repeat-x;
+background-color: #FF9900;
+border-bottom: 1px solid #CA6500;
+}
+
+/*^'^ Secondary Items ^'^*/	
+#nav-container div a, #nav-container ul a{	
+padding:3px 10px 3px 6px;
+background-color: #FFFFFF;
+background: url(images/item-secondary-bg.jpg);
+background-repeat: no-repeat;
+background-position: 0px 22px;
+font-size:11px;
+border-width:0px;
+border-style:none;
+margin: 0px 0px 0px 0px;
+width: 149px;
+}
+
+/*^'^ Secondary Items Hover State ^'^*/	
+#nav-container div a:hover, #nav-container ul a:hover{	
+background-color: #FFFFFF;
+background: url(images/item-secondary-bg.jpg);
+background-repeat: no-repeat;
+color:#CC0000;
+}
+
+/*^'^ Secondary Item Titles ^'^*/	
+#nav-container .item-secondary-title{	
+cursor:default;
+padding:4px 0px 3px 7px;
+color: #6C3600;
+font-family: Arial, Trebuchet MS, Arial, sans-serif, Helvetica;
+font-size:11px;
+/* background: url(images/item-secondary-title-bg.jpg); */
+background-repeat: no-repeat;
+font-weight:bold;
+}
+
+/*^'^ Horizontal Dividers ^'^*/	
+#nav-container .divider-horiz{	
+border-top-width:1px;
+margin:5px 5px;
+border-color: #C16100;
+}
+
+/*^'^ Vertical Dividers ^'^*/	
+#nav-container .divider-vert{	
+border-left-width:1px;
+height:15px;
+margin:4px 2px 0px 2px;
+border-color:#AAAAAA;
+}
+	   
+
+/* ==================================FIM MENU================================= */
